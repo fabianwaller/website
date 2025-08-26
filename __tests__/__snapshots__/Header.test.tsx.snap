@@ -234,7 +234,7 @@ exports[`Header renders Header unchanged 1`] = `
           </div>
           <div
             class="hidden md:block absolute z-20 w-full overflow-hidden transition-[clip-path] duration-300 ease-in-out-quad"
-            style="clip-path: inset(0% 0% 0% 0% round 8px);"
+            style="clip-path: inset(0 100% 0 100% round 8px);"
           >
             <div
               style="position: relative;"

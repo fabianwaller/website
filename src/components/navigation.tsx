@@ -58,7 +58,10 @@ export function Navigation() {
   useEffect(() => {
     const container = clipPathContainerRef.current;
 
-    if (!hoveredTab || !container) return;
+    if (!hoveredTab || !container) {
+      container.style.clipPath = `inset(0 ${100}% 0 ${100}% round 8px)`;
+      return;
+    }
 
     const activeTabElement = activeTabElementRef.current;
 
@@ -98,9 +101,9 @@ export function Navigation() {
               key={item.href}
               className="m-0 flex flex-col items-center bg-transparent"
               onMouseEnter={() => setHoveredTab(item.href)}
-              onMouseLeave={() => setHoveredTab(null)}
+              onMouseLeave={() => setHoveredTab("")}
               onFocus={() => setHoveredTab(item.href)}
-              onBlur={() => setHoveredTab(null)}
+              onBlur={() => setHoveredTab("")}
               aria-hidden={hoveredTab !== item.href}
             >
               <NavigationMenuLink
@@ -128,7 +131,7 @@ export function Navigation() {
             "transition-[clip-path] duration-300 ease-in-out-quad",
           )}
           style={{
-            clipPath: "inset(0% 0% 0% 0% round 8px)",
+            clipPath: "inset(100% 100% 100% 100% round 8px)",
           }}
         >
           <NavigationMenuList
@@ -142,9 +145,9 @@ export function Navigation() {
                 key={item.href}
                 className="relative m-0 flex flex-col items-center bg-transparent"
                 onMouseEnter={() => setHoveredTab(item.href)}
-                onMouseLeave={() => setHoveredTab(null)}
+                onMouseLeave={() => setHoveredTab("")}
                 onFocus={() => setHoveredTab(item.href)}
-                onBlur={() => setHoveredTab(null)}
+                onBlur={() => setHoveredTab("")}
                 ref={hoveredTab === item.href ? activeTabElementRef : null}
                 aria-hidden={hoveredTab !== item.href}
               >
