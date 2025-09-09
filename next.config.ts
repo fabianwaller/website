@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   // Optionally, add any other Next.js config below
   transpilePackages: ['next-mdx-remote'],
   experimental: {
-    viewTransition: true,
+    viewTransition: false,
     browserDebugInfoInTerminal: true,
   },
 };
