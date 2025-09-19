@@ -1,4 +1,4 @@
-import ScrollAnimated from "@/components/ScrollAnimated";
+import EnterAnimated from "@/components/EnterAnimation";
 import Section from "@/components/Section";
 
 const Keyword = ({ children }: { children: React.ReactNode }) => (
@@ -36,14 +36,14 @@ export default function About() {
     <Section name="about" title="About me" subtitle="What I'm Doing Now">
       <div className={"grid items-start gap-6 md:grid-cols-2"}>
         <div className="flex flex-wrap items-center justify-start gap-2">
-          {KeywordList.map((keyword) => (
-            <ScrollAnimated key={keyword}>
+          {KeywordList.map((keyword, index) => (
+            <EnterAnimated key={keyword} index={index} type="fast">
               <Keyword>{keyword}</Keyword>
-            </ScrollAnimated>
+            </EnterAnimated>
           ))}
         </div>
         <div>
-          <ScrollAnimated>
+          <EnterAnimated>
             <p className="leading-relaxed">
               Full-stack software engineer with a strong foundation in
               JavaScript, and TypeScript, mainly interested in user interfaces
@@ -52,7 +52,7 @@ export default function About() {
               Next.js, Supabase, and Tailwind CSS, with a keen interest in
               privacy-focused and developer-centric tools.
             </p>
-          </ScrollAnimated>
+          </EnterAnimated>
         </div>
       </div>
     </Section>

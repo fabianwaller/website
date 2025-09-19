@@ -14,8 +14,8 @@ import { Calendar, ExternalLink, GitFork, Globe, Star } from "lucide-react";
 
 import { FaGithub as Github } from "react-icons/fa6";
 import { Badge } from "@/components/ui/badge";
-import ScrollAnimated from "@/components/ScrollAnimated";
 import { Glow, GlowArea } from "@/components/glow";
+import EnterAnimated from "@/components/EnterAnimation";
 
 const formatDate = (date: Date) => {
   return (
@@ -26,7 +26,7 @@ const formatDate = (date: Date) => {
 const ProjectCards = ({ data }: { data: any[] }) => {
   return (
     <GlowArea className={"flex grid-cols-2 flex-col gap-6 md:grid"}>
-      {data.map((repo) => {
+      {data.map((repo, index) => {
         if (repo.full_name == "fabianwaller/fabianwaller") return;
         const topics: any[] = repo.topics;
         return (
@@ -35,7 +35,7 @@ const ProjectCards = ({ data }: { data: any[] }) => {
             color="hsl(var(--foreground))"
             className="h-full rounded-lg"
           >
-            <ScrollAnimated className="h-full">
+            <EnterAnimated className="h-full" index={Math.floor(index / 2)}>
               <Card className="h-full">
                 <CardHeader>
                   <VStack className="items-start">
@@ -98,7 +98,7 @@ const ProjectCards = ({ data }: { data: any[] }) => {
                   </HStack>
                 </CardFooter>
               </Card>
-            </ScrollAnimated>
+            </EnterAnimated>
           </Glow>
         );
       })}

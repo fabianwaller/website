@@ -10,148 +10,164 @@ exports[`Home renders home page unchanged 1`] = `
       class="container relative ml-auto mr-auto w-screen max-w-custom px-8 md:px-0 h-page-minus-header"
     >
       <div
-        class="relative transform-gpu overflow-visible bg-transparent"
+        style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
       >
-        <svg
-          class="absolute z-0 transform-gpu blur-md will-change-transform md:blur-lg lg:blur-xl xl:blur-2xl"
-          color-interpolation-filters="sRGB"
-          height="100%"
-          overflow="visible"
-          preserveAspectRatio="xMidYMid meet"
-          viewBox="0 0 500 500"
-          width="100%"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+        <div
+          class="relative transform-gpu overflow-visible bg-transparent"
         >
-          <image
-            height="600"
-            mask="url(#mask)"
-            width="600"
-            x="0"
-            xlink:href="/images/avatar.jpeg"
+          <svg
+            class="absolute z-0 transform-gpu blur-md will-change-transform md:blur-lg lg:blur-xl xl:blur-2xl"
+            color-interpolation-filters="sRGB"
+            height="100%"
+            overflow="visible"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 500 500"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
-            y="60"
-          />
-        </svg>
-        <svg
-          class="z-0 transform-gpu will-change-transform"
-          height="100%"
-          preserveAspectRatio="xMidYMid meet"
-          viewBox="0 0 500 500"
-          width="100%"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-        >
-          <defs>
-            <lineargradient
-              id="gradient2"
-              x1="0%"
-              x2="0%"
-              y1="0%"
-              y2="100%"
-            >
-              <stop
-                class="stopo"
-                offset="0%"
-              />
-              <stop
-                class="stopb"
-                offset="100%"
-              />
-            </lineargradient>
-          </defs>
-          <mask
-            id="mask"
           >
-            <path
-              fill="#fff"
-            >
-              <animate
-                attributeName="d"
-                dur="0"
-                repeatCount="indefinite"
-                values="M430.5,295.5Q375,341,345,395Q315,449,254.5,436Q194,423,148,390Q102,357,59,303.5Q16,250,58.5,196Q101,142,144,99Q187,56,246,68.5Q305,81,357.5,107.5Q410,134,448,192Q486,250,430.5,295.5Z; M420.5,306.5Q406,363,360,405Q314,447,257.5,423.5Q201,400,162.5,371Q124,342,62.5,296Q1,250,32.5,182.5Q64,115,132.5,106.5Q201,98,257.5,75Q314,52,380.5,79.5Q447,107,441,178.5Q435,250,420.5,306.5Z;                                M417.5,307.5Q408,365,362,409Q316,453,259,425.5Q202,398,156,374.5Q110,351,74,300.5Q38,250,75.5,200.5Q113,151,158,128.5Q203,106,251.5,100.5Q300,95,344,122.5Q388,150,407.5,200Q427,250,417.5,307.5Z;     M436.71733,302.40152Q393.88114,354.80305,352.19524,394.88114Q310.50933,434.95924,247.62648,442.75638Q184.74362,450.55352,146.58743,401.56114Q108.43124,352.56876,97.13924,301.28438Q85.84724,250,91.18762,194.22495Q96.528,138.4499,147.01867,113.20457Q197.50933,87.95924,253.06876,78.53733Q308.62819,69.11543,363.60952,98.18419Q418.59086,127.25295,449.07219,188.62648Q479.55352,250,436.71733,302.40152Z; M401,296Q377,342,341,380Q305,418,250.5,417.5Q196,417,135.5,397Q75,377,55.5,313.5Q36,250,63,191.5Q90,133,133,78Q176,23,236.5,64.5Q297,106,352.5,120.5Q408,135,416.5,192.5Q425,250,401,296Z; M430.5,295.5Q375,341,345,395Q315,449,254.5,436Q194,423,148,390Q102,357,59,303.5Q16,250,58.5,196Q101,142,144,99Q187,56,246,68.5Q305,81,357.5,107.5Q410,134,448,192Q486,250,430.5,295.5Z "
-              />
-            </path>
-          </mask>
-          <image
-            height="500"
-            mask="url(#mask)"
-            width="500"
-            x="0"
-            xlink:href="/images/avatar.jpeg"
+            <image
+              height="600"
+              mask="url(#mask)"
+              width="600"
+              x="0"
+              xlink:href="/images/avatar.jpeg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              y="60"
+            />
+          </svg>
+          <svg
+            class="z-0 transform-gpu will-change-transform"
+            height="100%"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 500 500"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
-            y="60"
-          />
-        </svg>
+          >
+            <defs>
+              <lineargradient
+                id="gradient2"
+                x1="0%"
+                x2="0%"
+                y1="0%"
+                y2="100%"
+              >
+                <stop
+                  class="stopo"
+                  offset="0%"
+                />
+                <stop
+                  class="stopb"
+                  offset="100%"
+                />
+              </lineargradient>
+            </defs>
+            <mask
+              id="mask"
+            >
+              <path
+                fill="#fff"
+              >
+                <animate
+                  attributeName="d"
+                  dur="0"
+                  repeatCount="indefinite"
+                  values="M430.5,295.5Q375,341,345,395Q315,449,254.5,436Q194,423,148,390Q102,357,59,303.5Q16,250,58.5,196Q101,142,144,99Q187,56,246,68.5Q305,81,357.5,107.5Q410,134,448,192Q486,250,430.5,295.5Z; M420.5,306.5Q406,363,360,405Q314,447,257.5,423.5Q201,400,162.5,371Q124,342,62.5,296Q1,250,32.5,182.5Q64,115,132.5,106.5Q201,98,257.5,75Q314,52,380.5,79.5Q447,107,441,178.5Q435,250,420.5,306.5Z;                                M417.5,307.5Q408,365,362,409Q316,453,259,425.5Q202,398,156,374.5Q110,351,74,300.5Q38,250,75.5,200.5Q113,151,158,128.5Q203,106,251.5,100.5Q300,95,344,122.5Q388,150,407.5,200Q427,250,417.5,307.5Z;     M436.71733,302.40152Q393.88114,354.80305,352.19524,394.88114Q310.50933,434.95924,247.62648,442.75638Q184.74362,450.55352,146.58743,401.56114Q108.43124,352.56876,97.13924,301.28438Q85.84724,250,91.18762,194.22495Q96.528,138.4499,147.01867,113.20457Q197.50933,87.95924,253.06876,78.53733Q308.62819,69.11543,363.60952,98.18419Q418.59086,127.25295,449.07219,188.62648Q479.55352,250,436.71733,302.40152Z; M401,296Q377,342,341,380Q305,418,250.5,417.5Q196,417,135.5,397Q75,377,55.5,313.5Q36,250,63,191.5Q90,133,133,78Q176,23,236.5,64.5Q297,106,352.5,120.5Q408,135,416.5,192.5Q425,250,401,296Z; M430.5,295.5Q375,341,345,395Q315,449,254.5,436Q194,423,148,390Q102,357,59,303.5Q16,250,58.5,196Q101,142,144,99Q187,56,246,68.5Q305,81,357.5,107.5Q410,134,448,192Q486,250,430.5,295.5Z "
+                />
+              </path>
+            </mask>
+            <image
+              height="500"
+              mask="url(#mask)"
+              width="500"
+              x="0"
+              xlink:href="/images/avatar.jpeg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              y="60"
+            />
+          </svg>
+        </div>
       </div>
       <div
         class="flex flex-col justify-center gap-4 items-start pb-8"
       >
-        <h1>
-          Fabian Waller
-        </h1>
-        <p
-          class="max-w-[35em] leading-relaxed"
-        >
-          22 year old computer science student at Saarland University obsessed with fullstack web development at Ergosign.
-        </p>
         <div
-          style="opacity: 0;"
+          style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
         >
-          <button
-            class="inline-flex items-center justify-center gap-1 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 hover:bg-card-foreground hover:text-primary-foreground relative -left-4"
+          <h1>
+            Fabian Waller
+          </h1>
+        </div>
+        <div
+          style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+        >
+          <p
+            class="max-w-[35em] leading-relaxed"
           >
-            <div
-              class="flex items-center font-medium hover:animate-none motion-safe:animate-in"
+            22 year old computer science student at Saarland University obsessed with fullstack web development at Ergosign.
+          </p>
+        </div>
+        <div
+          style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+        >
+          <div
+            style="opacity: 0;"
+          >
+            <button
+              class="inline-flex items-center justify-center gap-1 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 hover:bg-card-foreground hover:text-primary-foreground relative -left-4"
             >
-              <span>
-                Press 
-              </span>
               <div
-                class="mx-2 flex h-5 w-5 items-center"
+                class="flex items-center font-medium hover:animate-none motion-safe:animate-in"
               >
                 <span>
-                  ctrl
+                  Press 
+                </span>
+                <div
+                  class="mx-2 flex h-5 w-5 items-center"
+                >
+                  <span>
+                    ctrl
+                  </span>
+                </div>
+                <span>
+                  K
+                </span>
+                <span
+                  class="ml-2"
+                >
+                  for shortcuts
+                </span>
+                <span
+                  class="ml-2"
+                >
+                  <div
+                    style="opacity: 0;"
+                  >
+                    <svg
+                      class="lucide lucide-arrow-right"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 12h14"
+                      />
+                      <path
+                        d="m12 5 7 7-7 7"
+                      />
+                    </svg>
+                  </div>
                 </span>
               </div>
-              <span>
-                K
-              </span>
-              <span
-                class="ml-2"
-              >
-                for shortcuts
-              </span>
-              <span
-                class="ml-2"
-              >
-                <div
-                  style="opacity: 0;"
-                >
-                  <svg
-                    class="lucide lucide-arrow-right"
-                    fill="none"
-                    height="24"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M5 12h14"
-                    />
-                    <path
-                      d="m12 5 7 7-7 7"
-                    />
-                  </svg>
-                </div>
-              </span>
-            </div>
-          </button>
+            </button>
+          </div>
         </div>
       </div>
     </div>

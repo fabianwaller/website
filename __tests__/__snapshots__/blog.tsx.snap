@@ -29,7 +29,7 @@ exports[`Blog renders blog page unchanged 1`] = `
         class="flex flex-col items-center justify-center gap-4"
       >
         <div
-          style="opacity: 0; transform: translateY(10px);"
+          style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
         >
           <p
             class="leading-relaxed"
@@ -41,7 +41,7 @@ exports[`Blog renders blog page unchanged 1`] = `
           class="flex flex-col items-center justify-center gap-4"
         >
           <div
-            style="opacity: 0; transform: translateY(10px);"
+            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
           >
             <a
               href="/blog/slug1"
@@ -78,7 +78,7 @@ exports[`Blog renders blog page unchanged 1`] = `
             </a>
           </div>
           <div
-            style="opacity: 0; transform: translateY(10px);"
+            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
           >
             <a
               href="/blog/slug2"

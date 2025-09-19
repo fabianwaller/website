@@ -1,5 +1,5 @@
+import EnterAnimated from "@/components/EnterAnimation";
 import ItemList, { itemsType } from "@/components/ItemList";
-import ScrollAnimated from "@/components/ScrollAnimated";
 import Section from "@/components/Section";
 import VStack from "@/components/VStack";
 
@@ -104,19 +104,33 @@ export default function Uses() {
       subtitle="what software and hardware I use"
     >
       <VStack>
-        <ScrollAnimated>
+        <EnterAnimated>
           <p className="leading-relaxed">
             As an developer, I&apos;ve been spending hours and hours at my desk
             every day. So, I&apos;ve been continuously improving my workspace in
             order to boost my productivity. So, here is a living snapshot and a
             place to point curious people to when I get asked.
           </p>
-        </ScrollAnimated>
+        </EnterAnimated>
         <VStack className="w-full items-start">
-          <ItemList title="Tech Stack" items={techStackItems} />
-          <ItemList title="Coding" items={codingItems} />
-          <ItemList title="Apps" items={appItems} />
-          <ItemList title="Desk" items={deskItems} />
+          <ItemList title="Tech Stack" items={techStackItems} startIndex={1} />
+          <ItemList
+            title="Coding"
+            items={codingItems}
+            startIndex={2 + techStackItems.length}
+          />
+          <ItemList
+            title="Apps"
+            items={appItems}
+            startIndex={3 + techStackItems.length + codingItems.length}
+          />
+          <ItemList
+            title="Desk"
+            items={deskItems}
+            startIndex={
+              4 + techStackItems.length + codingItems.length + appItems.length
+            }
+          />
         </VStack>
       </VStack>
     </Section>

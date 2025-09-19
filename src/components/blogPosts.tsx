@@ -1,6 +1,5 @@
 "use client";
 
-import { BlogPost } from "@/app/(website)/blog/utils";
 import Link from "next/link";
 import VStack from "./VStack";
 import { useState } from "react";
@@ -9,7 +8,7 @@ import { useBlogPosts } from "@/provider/BlogPostsContext";
 import { CardContent, CardDescription } from "./ui/card";
 import { format } from "date-fns";
 import { de } from "date-fns/locale";
-import ScrollAnimated from "./ScrollAnimated";
+import EnterAnimated from "./EnterAnimation";
 
 const BlogPosts = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -19,7 +18,7 @@ const BlogPosts = () => {
   return (
     <VStack>
       {blogPosts.map((post, index) => (
-        <ScrollAnimated key={post.slug}>
+        <EnterAnimated key={post.slug} index={1 + index}>
           <Link href={`/blog/${post.slug}`}>
             <div
               className="relative block h-full w-full"
@@ -47,7 +46,7 @@ const BlogPosts = () => {
               </Card>
             </div>
           </Link>
-        </ScrollAnimated>
+        </EnterAnimated>
       ))}
     </VStack>
   );

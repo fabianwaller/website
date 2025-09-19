@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import ScrollAnimated from "./ScrollAnimated";
+import EnterAnimated from "./EnterAnimation";
 
 export type itemsType = {
   href?: string;
@@ -8,15 +8,23 @@ export type itemsType = {
   description: string;
 }[];
 
-const ItemList = ({ title, items }: { title: string; items: itemsType }) => {
+const ItemList = ({
+  title,
+  items,
+  startIndex,
+}: {
+  title: string;
+  items: itemsType;
+  startIndex: number;
+}) => {
   return (
     <div className="flex flex-col gap-2">
-      <ScrollAnimated>
+      <EnterAnimated index={startIndex} type="fast">
         <h3>{title}</h3>
-      </ScrollAnimated>
+      </EnterAnimated>
       <ul className="flex flex-col gap-2">
         {items.map((item, index) => (
-          <ScrollAnimated key={index}>
+          <EnterAnimated key={index} index={startIndex + 1 + index} type="fast">
             <li>
               {item.href ? (
                 <Link href={item.href} target="_blank">
@@ -32,7 +40,7 @@ const ItemList = ({ title, items }: { title: string; items: itemsType }) => {
               )}{" "}
               - {item.description}
             </li>
-          </ScrollAnimated>
+          </EnterAnimated>
         ))}
       </ul>
     </div>
