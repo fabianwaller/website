@@ -28,7 +28,7 @@ const Section: React.FC<SectionProps> = (props) => {
           className={props.headerAlign == "left" ? "text-left" : "text-center"}
         >
           <div
-            className={props.disableAnimations ? "" : "animate-enter"}
+            className={props.disableAnimations ? "" : "animate-appear"}
             style={{
               animationDelay: getAnimationDelay(props.animationIndex ?? 0),
             }}
@@ -40,7 +40,7 @@ const Section: React.FC<SectionProps> = (props) => {
             )}
           </div>
           <div
-            className={props.disableAnimations ? "" : "animate-enter"}
+            className={props.disableAnimations ? "" : "animate-appear"}
             style={{
               animationDelay: getAnimationDelay(
                 (props.animationIndex ?? 0) + 1,
@@ -50,7 +50,7 @@ const Section: React.FC<SectionProps> = (props) => {
             {props.subtitle && <Subtitle>{props.subtitle}</Subtitle>}
           </div>
           <div
-            className={props.disableAnimations ? "" : "animate-enter"}
+            className={props.disableAnimations ? "" : "animate-appear"}
             style={{
               animationDelay: getAnimationDelay(
                 (props.animationIndex ?? 0) + 2,

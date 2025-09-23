@@ -4,7 +4,7 @@ import styles from "./heroblob.module.css";
 const HeroBlob = () => {
   const animationDuration = 50;
   return (
-    <div className="relative transform-gpu animate-enter overflow-visible bg-transparent delay-700">
+    <div className="animate-appear relative transform-gpu overflow-visible bg-transparent delay-700">
       <svg
         preserveAspectRatio="xMidYMid meet"
         xmlns="http://www.w3.org/2000/svg"

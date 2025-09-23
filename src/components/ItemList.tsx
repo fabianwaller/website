@@ -20,7 +20,7 @@ const ItemList = ({
   return (
     <div className="flex flex-col gap-2">
       <h3
-        className="animate-enter"
+        className="animate-appear"
         style={{ animationDelay: getAnimationDelay(startIndex) }}
       >
         {title}
@@ -29,7 +29,7 @@ const ItemList = ({
         {items.map((item, index) => (
           <li
             key={index}
-            className="animate-enter"
+            className="animate-appear"
             style={{
               animationDelay: getAnimationDelay(1 + startIndex + index),
             }}

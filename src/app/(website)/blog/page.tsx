@@ -11,7 +11,7 @@ const Blog: React.FC = () => {
     >
       <VStack>
         <p
-          className="animate-enter leading-relaxed"
+          className="animate-appear leading-relaxed"
           style={{ animationDelay: getAnimationDelay(2) }}
         >
           Here you&apos;ll find all my public thoughts, notes, learnings and

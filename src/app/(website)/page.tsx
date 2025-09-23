@@ -13,8 +13,8 @@ export default function Home() {
       <Container fullScreen>
         <HeroBlob />
         <VStack className="items-start pb-8">
-          <h1 className="animate-enter">{title}</h1>
-          <p className="max-w-[35em] animate-enter leading-relaxed">
+          <h1 className="animate-appear">{title}</h1>
+          <p className="animate-appear max-w-[35em] leading-relaxed">
             Computer science student at Saarland University obsessed with
             fullstack web development working at{" "}
             <Link href={"https://ergosign.de/de/"}>

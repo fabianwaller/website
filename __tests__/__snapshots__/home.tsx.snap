@@ -10,7 +10,7 @@ exports[`Home renders home page unchanged 1`] = `
       class="container relative ml-auto mr-auto w-screen max-w-custom px-8 md:px-0 h-page-minus-header"
     >
       <div
-        class="relative transform-gpu animate-enter overflow-visible bg-transparent delay-700"
+        class="animate-appear relative transform-gpu overflow-visible bg-transparent delay-700"
       >
         <svg
           class="absolute z-0 transform-gpu blur-md will-change-transform md:blur-lg lg:blur-xl xl:blur-2xl"
@@ -86,15 +86,27 @@ exports[`Home renders home page unchanged 1`] = `
         </svg>
       </div>
       <div
-        class="flex flex-col justify-center gap-4 animate-enter items-start pb-8"
+        class="flex flex-col justify-center gap-4 items-start pb-8"
       >
-        <h1>
+        <h1
+          class="animate-appear"
+        >
           Fabian Waller
         </h1>
         <p
-          class="max-w-[35em] leading-relaxed"
+          class="animate-appear max-w-[35em] leading-relaxed"
         >
-          22 year old computer science student at Saarland University obsessed with fullstack web development at Ergosign.
+          Computer science student at Saarland University obsessed with fullstack web development working at 
+          <a
+            href="https://ergosign.de/de/"
+          >
+            <button
+              class="relative inline-flex items-center justify-center gap-1 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-md h-auto p-0 text-text-normal underline underline-offset-2 hover:text-text-dark"
+            >
+              Ergosign
+            </button>
+          </a>
+          .
         </p>
         <div
           style="opacity: 0;"

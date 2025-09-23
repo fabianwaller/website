@@ -32,7 +32,7 @@ const ProjectCards = ({ data }: { data: any[] }) => {
           <Glow
             key={repo.full_name}
             color="hsl(var(--foreground))"
-            className="h-full animate-enter rounded-lg"
+            className="animate-appear h-full rounded-lg"
             style={{
               animationDelay: getAnimationDelay(2 + Math.floor(index / 2)),
             }}

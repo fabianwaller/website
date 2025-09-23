@@ -55,11 +55,11 @@ export default function About() {
     <>
       <Section name="about" title="About me" subtitle="What I'm Doing Now">
         <div className={"grid items-start gap-6 md:grid-cols-2"}>
-          <div className="flex flex-wrap items-center justify-start gap-x-2 gap-y-6">
+          <div className="flex flex-wrap items-center justify-start gap-x-2 gap-y-4">
             {KeywordList.map((keyword, index) => (
               <div
                 key={keyword}
-                className="animate-enter"
+                className="animate-appear"
                 style={{ animationDelay: getAnimationDelay(2 + index / 4) }}
               >
                 <Keyword>{keyword}</Keyword>
@@ -68,7 +68,7 @@ export default function About() {
           </div>
           <VStack>
             <p
-              className="animate-enter leading-relaxed"
+              className="animate-appear leading-relaxed"
               style={{ animationDelay: getAnimationDelay(2) }}
             >
               Full-stack software engineer with a strong foundation in
@@ -76,7 +76,7 @@ export default function About() {
               and user experiences, and artificial intelligence.
             </p>
             <p
-              className="animate-enter leading-relaxed"
+              className="animate-appear leading-relaxed"
               style={{
                 animationDelay: getAnimationDelay(
                   2 + KeywordList.length / 4 / 2,
@@ -100,7 +100,7 @@ export default function About() {
         <VStack className="items-start gap-8">
           {career.map((job, index) => (
             <VStack
-              className="animate-enter items-start gap-2"
+              className="animate-appear items-start gap-2"
               key={index}
               style={{
                 animationDelay: getAnimationDelay(

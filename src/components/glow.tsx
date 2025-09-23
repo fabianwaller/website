@@ -90,7 +90,7 @@ export const Glow = (props: GlowProps) => {
   return (
     <div
       ref={element}
-      className={cn(className, "relative animate-enter")}
+      className={cn(className, "animate-appear relative")}
       style={style}
     >
       <div

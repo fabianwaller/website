@@ -13,7 +13,7 @@ exports[`About renders about page unchanged 1`] = `
         class="text-center"
       >
         <div
-          class="animate-enter"
+          class="animate-appear"
           style="animation-delay: 0s;"
         >
           <h2>
@@ -21,7 +21,7 @@ exports[`About renders about page unchanged 1`] = `
           </h2>
         </div>
         <div
-          class="animate-enter"
+          class="animate-appear"
           style="animation-delay: 0.06s;"
         >
           <span
@@ -31,7 +31,7 @@ exports[`About renders about page unchanged 1`] = `
           </span>
         </div>
         <div
-          class="animate-enter"
+          class="animate-appear"
           style="animation-delay: 0.12s;"
         />
       </div>
@@ -43,10 +43,10 @@ exports[`About renders about page unchanged 1`] = `
         class="grid items-start gap-6 md:grid-cols-2"
       >
         <div
-          class="flex flex-wrap items-center justify-start gap-x-2 gap-y-6"
+          class="flex flex-wrap items-center justify-start gap-x-2 gap-y-4"
         >
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.12s;"
           >
             <span
@@ -56,7 +56,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.135s;"
           >
             <span
@@ -66,7 +66,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.15s;"
           >
             <span
@@ -76,7 +76,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.16499999999999998s;"
           >
             <span
@@ -86,7 +86,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.18s;"
           >
             <span
@@ -96,7 +96,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.195s;"
           >
             <span
@@ -106,7 +106,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.21s;"
           >
             <span
@@ -116,7 +116,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.22499999999999998s;"
           >
             <span
@@ -126,7 +126,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.24s;"
           >
             <span
@@ -136,7 +136,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.255s;"
           >
             <span
@@ -146,7 +146,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.27s;"
           >
             <span
@@ -156,7 +156,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.285s;"
           >
             <span
@@ -166,7 +166,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.3s;"
           >
             <span
@@ -176,7 +176,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.315s;"
           >
             <span
@@ -186,7 +186,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.32999999999999996s;"
           >
             <span
@@ -196,7 +196,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.345s;"
           >
             <span
@@ -206,7 +206,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.36s;"
           >
             <span
@@ -216,7 +216,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.375s;"
           >
             <span
@@ -226,7 +226,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.39s;"
           >
             <span
@@ -236,7 +236,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.40499999999999997s;"
           >
             <span
@@ -246,7 +246,7 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="animate-enter"
+            class="animate-appear"
             style="animation-delay: 0.42s;"
           >
             <span
@@ -260,13 +260,13 @@ exports[`About renders about page unchanged 1`] = `
           class="flex flex-col items-center justify-center gap-4"
         >
           <p
-            class="animate-enter leading-relaxed"
+            class="animate-appear leading-relaxed"
             style="animation-delay: 0.12s;"
           >
             Full-stack software engineer with a strong foundation in JavaScript, and TypeScript, mainly interested in user interfaces and user experiences, and artificial intelligence.
           </p>
           <p
-            class="animate-enter leading-relaxed"
+            class="animate-appear leading-relaxed"
             style="animation-delay: 0.27749999999999997s;"
           >
             Skilled in building scalable solutions across diverse tech stacks, including Next.js, Supabase, and Tailwind CSS, with a keen interest in privacy-focused and developer-centric tools.
@@ -286,7 +286,7 @@ exports[`About renders about page unchanged 1`] = `
         class="text-left"
       >
         <div
-          class="animate-enter"
+          class="animate-appear"
           style="animation-delay: 0.435s;"
         >
           <h3>
@@ -294,11 +294,11 @@ exports[`About renders about page unchanged 1`] = `
           </h3>
         </div>
         <div
-          class="animate-enter"
+          class="animate-appear"
           style="animation-delay: 0.495s;"
         />
         <div
-          class="animate-enter"
+          class="animate-appear"
           style="animation-delay: 0.5549999999999999s;"
         />
       </div>
@@ -310,7 +310,7 @@ exports[`About renders about page unchanged 1`] = `
         class="flex flex-col justify-center items-start gap-8"
       >
         <div
-          class="flex flex-col justify-center animate-enter items-start gap-2"
+          class="flex flex-col justify-center animate-appear items-start gap-2"
           style="animation-delay: 0.495s;"
         >
           <h4
@@ -358,7 +358,7 @@ exports[`About renders about page unchanged 1`] = `
           </div>
         </div>
         <div
-          class="flex flex-col justify-center animate-enter items-start gap-2"
+          class="flex flex-col justify-center animate-appear items-start gap-2"
           style="animation-delay: 0.5549999999999999s;"
         >
           <h4

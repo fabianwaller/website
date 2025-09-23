@@ -21,7 +21,7 @@ const BlogPosts = () => {
         <Link
           href={`/blog/${post.slug}`}
           key={post.slug}
-          className="animate-enter"
+          className="animate-appear"
           style={{ animationDelay: getAnimationDelay(3 + index) }}
         >
           <div

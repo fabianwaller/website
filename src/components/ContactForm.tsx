@@ -82,7 +82,7 @@ const ContactForm = () => {
       <form onSubmit={form.handleSubmit(onSubmit)}>
         <VStack className="items-stretch">
           <div
-            className="flex animate-enter flex-col space-y-4 md:flex-row md:space-x-2 md:space-y-0"
+            className="animate-appear flex flex-col space-y-4 md:flex-row md:space-x-2 md:space-y-0"
             style={{ animationDelay: getAnimationDelay(2) }}
           >
             <FormField
@@ -113,7 +113,7 @@ const ContactForm = () => {
             />
           </div>
           <div
-            className="animate-enter"
+            className="animate-appear"
             style={{ animationDelay: getAnimationDelay(2) }}
           >
             <FormField
@@ -134,7 +134,7 @@ const ContactForm = () => {
             />
           </div>
           <div
-            className="animate-enter"
+            className="animate-appear"
             style={{ animationDelay: getAnimationDelay(2) }}
           >
             <FormField
@@ -152,7 +152,7 @@ const ContactForm = () => {
             />
           </div>
           <div
-            className="w-full animate-enter"
+            className="animate-appear w-full"
             style={{ animationDelay: getAnimationDelay(2) }}
           >
             <Button
