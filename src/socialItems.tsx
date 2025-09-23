@@ -11,6 +11,7 @@ export const socialItems = [
     href: "/contact",
     title: "Contact",
     icon: <Mail className="h-full w-full" />,
+    blank: false,
   },
   {
     href: "https://x.com/fabianwallerr",
