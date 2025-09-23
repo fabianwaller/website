@@ -7,7 +7,7 @@
     --header-height: 4rem;
     --border-radius: 0.5rem;
 
-    --body-h: 294;
+    --body-h: 205;
     --body-s: 0%;
     --body-l: 96%;
 
@@ -17,8 +17,8 @@
     --background: var(--body-h), var(--body-s), var(--body-l);
     --foreground: var(--body-h), 84%, 4.9%;
 
-    --primary: var(--body-h), 100%, 43.6%;
-    --primary-foreground: 293, 96.4%, 57.5%;
+    --primary: var(--body-h), 98.2%, 43.3%;
+    --primary-foreground: var(--body-h), 96.4%, 57.5%;
 
     --secondary: var(--body-h), 57%, 70%;
 
@@ -100,7 +100,7 @@
     --foreground: var(--body-h), 24%, 99%;
 
     --primary: var(--body-h), 100%, 43.6%;
-    --primary-foreground: 293, 96.4%, 57.5%;
+    --primary-foreground: var(--body-h), 96.4%, 57.5%;
 
     --secondary: var(--body-h), 69%, 61%;
     --secondary-foreground: 210 40% 98%;
