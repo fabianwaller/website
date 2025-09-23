@@ -117,7 +117,7 @@ export function CommandMenu() {
             {socialItems.map((item) => (
               <CommandItem
                 key={item.href}
-                onSelect={() => handleSelect(item.href, true)}
+                onSelect={() => handleSelect(item.href, item.blank)}
               >
                 {item.icon}
                 <span>{item.titleShort ?? item.title}</span>

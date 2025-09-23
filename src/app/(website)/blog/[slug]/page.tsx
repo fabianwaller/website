@@ -45,7 +45,7 @@ export const generateMetadata = async (props) => {
     //   ],
     // },
     // twitter: {
-    //   card: "summary_large_image",
+    //   card: "summary_large_image",s
     //   title,
     //   description,
     //   images: [ogImage],
@@ -72,6 +72,7 @@ export default async function BlogEntry(props) {
       description={post.metadata.summary}
       headerAlign="left"
       headerClassName="mb-4"
+      disableAnimations
     >
       {/* <script
         type="application/ld+json"

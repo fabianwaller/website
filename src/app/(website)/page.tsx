@@ -4,15 +4,24 @@ import Container from "@/components/Container";
 import HeroBlob from "@/components/heroblob/heroblob";
 import { Suspense } from "react";
 import { description, title } from "../info";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <section className="w-full" id="home">
       <Container fullScreen>
         <HeroBlob />
-        <VStack className="animate-enter items-start pb-8">
-          <h1>{title}</h1>
-          <p className="max-w-[35em] leading-relaxed">{description}</p>
+        <VStack className="items-start pb-8">
+          <h1 className="animate-enter">{title}</h1>
+          <p className="max-w-[35em] animate-enter leading-relaxed">
+            Computer science student at Saarland University obsessed with
+            fullstack web development working at{" "}
+            <Link href={"https://ergosign.de/de/"}>
+              <Button variant="link">Ergosign</Button>
+            </Link>
+            .
+          </p>
           <Suspense>
             <CommandMenuButton />
           </Suspense>

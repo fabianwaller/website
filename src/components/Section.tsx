@@ -13,6 +13,7 @@ type SectionProps = {
   headerAlign?: "left" | "center";
   children?: React.ReactNode;
   animationIndex?: number;
+  disableAnimations?: boolean;
 };
 
 export const getAnimationDelay = (index: number) => {
@@ -27,7 +28,7 @@ const Section: React.FC<SectionProps> = (props) => {
           className={props.headerAlign == "left" ? "text-left" : "text-center"}
         >
           <div
-            className="animate-enter"
+            className={props.disableAnimations ? "" : "animate-enter"}
             style={{
               animationDelay: getAnimationDelay(props.animationIndex ?? 0),
             }}
@@ -39,7 +40,7 @@ const Section: React.FC<SectionProps> = (props) => {
             )}
           </div>
           <div
-            className="animate-enter"
+            className={props.disableAnimations ? "" : "animate-enter"}
             style={{
               animationDelay: getAnimationDelay(
                 (props.animationIndex ?? 0) + 1,
@@ -49,7 +50,7 @@ const Section: React.FC<SectionProps> = (props) => {
             {props.subtitle && <Subtitle>{props.subtitle}</Subtitle>}
           </div>
           <div
-            className="animate-enter"
+            className={props.disableAnimations ? "" : "animate-enter"}
             style={{
               animationDelay: getAnimationDelay(
                 (props.animationIndex ?? 0) + 2,
