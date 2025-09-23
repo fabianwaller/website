@@ -8,4 +8,5 @@ const calculateAge = () => {
 };
 
 export const title = "Fabian Waller";
-export const description = `${calculateAge()} year old computer science student at Saarland University obsessed with fullstack web development at Ergosign.`;
+// export const description = `${calculateAge()} year old computer science student at Saarland University obsessed with fullstack web development at Ergosign.`;
+export const description = `Computer science student at Saarland University obsessed with fullstack web development working at Ergosign.`;
