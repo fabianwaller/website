@@ -73,7 +73,7 @@ interface GlowProps extends ComponentPropsWithoutRef<"div"> {
 }
 
 export const Glow = (props: GlowProps) => {
-  const { className, color = "blue", children, ...rest } = props;
+  const { className, color = "blue", children, style, ...rest } = props;
   const element = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -88,7 +88,11 @@ export const Glow = (props: GlowProps) => {
   }, []);
 
   return (
-    <div ref={element} className={cn(className, "relative")}>
+    <div
+      ref={element}
+      className={cn(className, "relative animate-enter")}
+      style={style}
+    >
       <div
         {...rest}
         style={{

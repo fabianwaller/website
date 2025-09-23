@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import EnterAnimated from "./EnterAnimation";
+import { getAnimationDelay } from "./Section";
 
 export type itemsType = {
   href?: string;
@@ -19,28 +19,35 @@ const ItemList = ({
 }) => {
   return (
     <div className="flex flex-col gap-2">
-      <EnterAnimated index={startIndex} type="fast">
-        <h3>{title}</h3>
-      </EnterAnimated>
+      <h3
+        className="animate-enter"
+        style={{ animationDelay: getAnimationDelay(startIndex) }}
+      >
+        {title}
+      </h3>
       <ul className="flex flex-col gap-2">
         {items.map((item, index) => (
-          <EnterAnimated key={index} index={startIndex + 1 + index} type="fast">
-            <li>
-              {item.href ? (
-                <Link href={item.href} target="_blank">
-                  <Button
-                    variant={"link"}
-                    className="ml-auto whitespace-normal break-words text-left"
-                  >
-                    <b>{item.title}</b>
-                  </Button>
-                </Link>
-              ) : (
-                <b>{item.title}</b>
-              )}{" "}
-              - {item.description}
-            </li>
-          </EnterAnimated>
+          <li
+            key={index}
+            className="animate-enter"
+            style={{
+              animationDelay: getAnimationDelay(1 + startIndex + index),
+            }}
+          >
+            {item.href ? (
+              <Link href={item.href} target="_blank">
+                <Button
+                  variant={"link"}
+                  className="ml-auto whitespace-normal break-words text-left"
+                >
+                  <b>{item.title}</b>
+                </Button>
+              </Link>
+            ) : (
+              <b>{item.title}</b>
+            )}{" "}
+            - {item.description}
+          </li>
         ))}
       </ul>
     </div>

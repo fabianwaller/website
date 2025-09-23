@@ -23,7 +23,7 @@ const buttonVariants = cva(
         outline:
           "border border-input bg-background hover:bg-accent hover:text-primary-foreground",
         ghost: "hover:bg-card-foreground hover:text-primary-foreground",
-        link: "text-md h-auto p-0 text-primary underline-offset-4 hover:underline",
+        link: "text-md h-auto p-0 text-text-normal underline underline-offset-2 hover:text-text-dark",
         unstyled: "p-0 text-primary hover:text-primary-foreground",
         white:
           "group/btn relative flex h-10 w-full items-center justify-start space-x-2 rounded-md bg-gray-50 px-4 font-medium text-black shadow-input dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]",

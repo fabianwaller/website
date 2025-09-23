@@ -12,14 +12,28 @@ exports[`About renders about page unchanged 1`] = `
       <div
         class="text-center"
       >
-        <h2>
-          About me
-        </h2>
-        <span
-          class="block text-sm"
+        <div
+          class="animate-enter"
+          style="animation-delay: 0s;"
         >
-          What I'm Doing Now
-        </span>
+          <h2>
+            About me
+          </h2>
+        </div>
+        <div
+          class="animate-enter"
+          style="animation-delay: 0.06s;"
+        >
+          <span
+            class="block text-sm"
+          >
+            What I'm Doing Now
+          </span>
+        </div>
+        <div
+          class="animate-enter"
+          style="animation-delay: 0.12s;"
+        />
       </div>
     </div>
     <div
@@ -29,10 +43,11 @@ exports[`About renders about page unchanged 1`] = `
         class="grid items-start gap-6 md:grid-cols-2"
       >
         <div
-          class="flex flex-wrap items-center justify-start gap-2"
+          class="flex flex-wrap items-center justify-start gap-x-2 gap-y-6"
         >
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.12s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -41,7 +56,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.135s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -50,7 +66,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.15s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -59,7 +76,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.16499999999999998s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -68,7 +86,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.18s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -77,7 +96,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.195s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -86,7 +106,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.21s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -95,7 +116,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.22499999999999998s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -104,7 +126,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.24s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -113,7 +136,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.255s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -122,7 +146,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.27s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -131,7 +156,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.285s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -140,7 +166,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.3s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -149,7 +176,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.315s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -158,7 +186,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.32999999999999996s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -167,7 +196,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.345s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -176,7 +206,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.36s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -185,7 +216,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.375s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -194,7 +226,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.39s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -203,7 +236,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.40499999999999997s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -212,7 +246,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            class="animate-enter"
+            style="animation-delay: 0.42s;"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -221,15 +256,146 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
         </div>
-        <div>
-          <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+        <div
+          class="flex flex-col items-center justify-center gap-4"
+        >
+          <p
+            class="animate-enter leading-relaxed"
+            style="animation-delay: 0.12s;"
           >
-            <p
-              class="leading-relaxed"
+            Full-stack software engineer with a strong foundation in JavaScript, and TypeScript, mainly interested in user interfaces and user experiences, and artificial intelligence.
+          </p>
+          <p
+            class="animate-enter leading-relaxed"
+            style="animation-delay: 0.27749999999999997s;"
+          >
+            Skilled in building scalable solutions across diverse tech stacks, including Next.js, Supabase, and Tailwind CSS, with a keen interest in privacy-focused and developer-centric tools.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="w-full py-8"
+    id="career"
+  >
+    <div
+      class="container relative ml-auto mr-auto w-screen max-w-custom px-8 md:px-0 mb-12"
+    >
+      <div
+        class="text-left"
+      >
+        <div
+          class="animate-enter"
+          style="animation-delay: 0.435s;"
+        >
+          <h3>
+            Career
+          </h3>
+        </div>
+        <div
+          class="animate-enter"
+          style="animation-delay: 0.495s;"
+        />
+        <div
+          class="animate-enter"
+          style="animation-delay: 0.5549999999999999s;"
+        />
+      </div>
+    </div>
+    <div
+      class="container relative ml-auto mr-auto w-screen max-w-custom px-8 md:px-0"
+    >
+      <div
+        class="flex flex-col justify-center items-start gap-8"
+      >
+        <div
+          class="flex flex-col justify-center animate-enter items-start gap-2"
+          style="animation-delay: 0.495s;"
+        >
+          <h4
+            class="mb-0"
+          >
+            UX Software Engineering Intern
+          </h4>
+          <div
+            class="flex"
+          >
+            <a
+              href="https://ergosign.de/de/"
+              target="_blank"
             >
-              Full-stack software engineer with a strong foundation in JavaScript, and TypeScript, mainly interested in user interfaces and user experiences, and artificial intelligence. Skilled in building scalable solutions across diverse tech stacks, including Next.js, Supabase, and Tailwind CSS, with a keen interest in privacy-focused and developer-centric tools.
-            </p>
+              <button
+                class="relative inline-flex items-center justify-center gap-1 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-md h-auto p-0 text-text-normal underline underline-offset-2 hover:text-text-dark"
+              >
+                Ergosign
+              </button>
+            </a>
+            <svg
+              class="lucide lucide-dot"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12.1"
+                cy="12.1"
+                r="1"
+              />
+            </svg>
+            Saarbrücken, Germany
+          </div>
+          <div
+            class="flex"
+          >
+            August 2024 - Present
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center animate-enter items-start gap-2"
+          style="animation-delay: 0.5549999999999999s;"
+        >
+          <h4
+            class="mb-0"
+          >
+            Programming II and Precourse Tutor
+          </h4>
+          <div
+            class="flex"
+          >
+            <span>
+              University of Saarland
+            </span>
+            <svg
+              class="lucide lucide-dot"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12.1"
+                cy="12.1"
+                r="1"
+              />
+            </svg>
+            Saarbrücken, Germany
+          </div>
+          <div
+            class="flex"
+          >
+            Summer terms 2023 and 2024
           </div>
         </div>
       </div>

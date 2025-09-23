@@ -1,15 +1,22 @@
 import React from "react";
 import Container from "./Container";
 import Subtitle from "./ui/Subtitle";
+import { get } from "http";
 
 type SectionProps = {
   name: string;
   title: string;
   subtitle?: string;
+  size?: "small" | "normal";
   description?: string;
   headerClassName?: string;
   headerAlign?: "left" | "center";
   children?: React.ReactNode;
+  animationIndex?: number;
+};
+
+export const getAnimationDelay = (index: number) => {
+  return `${index * 0.06}s`;
 };
 
 const Section: React.FC<SectionProps> = (props) => {
@@ -19,9 +26,38 @@ const Section: React.FC<SectionProps> = (props) => {
         <div
           className={props.headerAlign == "left" ? "text-left" : "text-center"}
         >
-          <h2 className={props.headerClassName}>{props.title}</h2>
-          {props.subtitle && <Subtitle>{props.subtitle}</Subtitle>}
-          {props.description && <p>{props.description}</p>}
+          <div
+            className="animate-enter"
+            style={{
+              animationDelay: getAnimationDelay(props.animationIndex ?? 0),
+            }}
+          >
+            {props.size == "small" ? (
+              <h3 className={props.headerClassName}>{props.title}</h3>
+            ) : (
+              <h2 className={props.headerClassName}>{props.title}</h2>
+            )}
+          </div>
+          <div
+            className="animate-enter"
+            style={{
+              animationDelay: getAnimationDelay(
+                (props.animationIndex ?? 0) + 1,
+              ),
+            }}
+          >
+            {props.subtitle && <Subtitle>{props.subtitle}</Subtitle>}
+          </div>
+          <div
+            className="animate-enter"
+            style={{
+              animationDelay: getAnimationDelay(
+                (props.animationIndex ?? 0) + 2,
+              ),
+            }}
+          >
+            {props.description && <p>{props.description}</p>}
+          </div>
         </div>
       </Container>
 

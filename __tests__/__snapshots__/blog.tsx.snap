@@ -12,14 +12,28 @@ exports[`Blog renders blog page unchanged 1`] = `
       <div
         class="text-center"
       >
-        <h2>
-          Personal Blog
-        </h2>
-        <span
-          class="block text-sm"
+        <div
+          class="animate-enter"
+          style="animation-delay: 0s;"
         >
-          insight in my thoughts
-        </span>
+          <h2>
+            Personal Blog
+          </h2>
+        </div>
+        <div
+          class="animate-enter"
+          style="animation-delay: 0.06s;"
+        >
+          <span
+            class="block text-sm"
+          >
+            insight in my thoughts
+          </span>
+        </div>
+        <div
+          class="animate-enter"
+          style="animation-delay: 0.12s;"
+        />
       </div>
     </div>
     <div
@@ -28,92 +42,85 @@ exports[`Blog renders blog page unchanged 1`] = `
       <div
         class="flex flex-col items-center justify-center gap-4"
       >
-        <div
-          style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+        <p
+          class="animate-enter leading-relaxed"
+          style="animation-delay: 0.12s;"
         >
-          <p
-            class="leading-relaxed"
-          >
-            Here you'll find all my public thoughts, notes, learnings and experiences. I share whatever I want, ranging from programming to math, over books and podcasts and much more. Scroll down to check them out!
-          </p>
-        </div>
+          Here you'll find all my public thoughts, notes, learnings and experiences. I share whatever I want, ranging from programming to math, over books and podcasts and much more. Scroll down to check them out!
+        </p>
         <div
           class="flex flex-col items-center justify-center gap-4"
         >
-          <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+          <a
+            class="animate-enter"
+            href="/blog/slug1"
+            style="animation-delay: 0.18s;"
           >
-            <a
-              href="/blog/slug1"
+            <div
+              class="relative block h-full w-full"
             >
               <div
-                class="relative block h-full w-full"
+                class="shadow-custom-soft grid gap-4 overflow-hidden rounded-lg px-6 py-4 border-none shadow-none hover:bg-transparent relative -left-4 z-20 w-full-plus bg-transparent"
               >
                 <div
-                  class="shadow-custom-soft grid gap-4 overflow-hidden rounded-lg px-6 py-4 border-none shadow-none hover:bg-transparent relative -left-4 z-20 w-full-plus bg-transparent"
+                  class=""
                 >
                   <div
-                    class=""
+                    class="flex items-center justify-between gap-4"
                   >
-                    <div
-                      class="flex items-center justify-between gap-4"
-                    >
-                      <div>
-                        <h3>
-                          Title
-                        </h3>
-                        <p
-                          class="text-normal"
-                        >
-                          summary
-                        </p>
-                      </div>
-                      <span>
-                        02.10.2024
-                      </span>
+                    <div>
+                      <h3>
+                        Title
+                      </h3>
+                      <p
+                        class="text-normal"
+                      >
+                        summary
+                      </p>
                     </div>
+                    <span>
+                      02.10.2024
+                    </span>
                   </div>
                 </div>
               </div>
-            </a>
-          </div>
-          <div
-            style="opacity: 0; transform: translateY(20px); filter: blur(1px);"
+            </div>
+          </a>
+          <a
+            class="animate-enter"
+            href="/blog/slug2"
+            style="animation-delay: 0.24s;"
           >
-            <a
-              href="/blog/slug2"
+            <div
+              class="relative block h-full w-full"
             >
               <div
-                class="relative block h-full w-full"
+                class="shadow-custom-soft grid gap-4 overflow-hidden rounded-lg px-6 py-4 border-none shadow-none hover:bg-transparent relative -left-4 z-20 w-full-plus bg-transparent"
               >
                 <div
-                  class="shadow-custom-soft grid gap-4 overflow-hidden rounded-lg px-6 py-4 border-none shadow-none hover:bg-transparent relative -left-4 z-20 w-full-plus bg-transparent"
+                  class=""
                 >
                   <div
-                    class=""
+                    class="flex items-center justify-between gap-4"
                   >
-                    <div
-                      class="flex items-center justify-between gap-4"
-                    >
-                      <div>
-                        <h3>
-                          Title
-                        </h3>
-                        <p
-                          class="text-normal"
-                        >
-                          summary
-                        </p>
-                      </div>
-                      <span>
-                        02.10.2024
-                      </span>
+                    <div>
+                      <h3>
+                        Title
+                      </h3>
+                      <p
+                        class="text-normal"
+                      >
+                        summary
+                      </p>
                     </div>
+                    <span>
+                      02.10.2024
+                    </span>
                   </div>
                 </div>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>

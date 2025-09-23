@@ -1,6 +1,5 @@
-import EnterAnimated from "@/components/EnterAnimation";
 import ItemList, { itemsType } from "@/components/ItemList";
-import Section from "@/components/Section";
+import Section, { getAnimationDelay } from "@/components/Section";
 import VStack from "@/components/VStack";
 
 const deskItems: itemsType = [
@@ -104,31 +103,32 @@ export default function Uses() {
       subtitle="what software and hardware I use"
     >
       <VStack>
-        <EnterAnimated>
-          <p className="leading-relaxed">
-            As an developer, I&apos;ve been spending hours and hours at my desk
-            every day. So, I&apos;ve been continuously improving my workspace in
-            order to boost my productivity. So, here is a living snapshot and a
-            place to point curious people to when I get asked.
-          </p>
-        </EnterAnimated>
+        <p
+          className="animate-enter leading-relaxed"
+          style={{ animationDelay: getAnimationDelay(2) }}
+        >
+          As an developer, I&apos;ve been spending hours and hours at my desk
+          every day. So, I&apos;ve been continuously improving my workspace in
+          order to boost my productivity. So, here is a living snapshot and a
+          place to point curious people to when I get asked.
+        </p>
         <VStack className="w-full items-start">
-          <ItemList title="Tech Stack" items={techStackItems} startIndex={1} />
+          <ItemList title="Tech Stack" items={techStackItems} startIndex={3} />
           <ItemList
             title="Coding"
             items={codingItems}
-            startIndex={2 + techStackItems.length}
+            startIndex={4 + techStackItems.length}
           />
           <ItemList
             title="Apps"
             items={appItems}
-            startIndex={3 + techStackItems.length + codingItems.length}
+            startIndex={5 + techStackItems.length + codingItems.length}
           />
           <ItemList
             title="Desk"
             items={deskItems}
             startIndex={
-              4 + techStackItems.length + codingItems.length + appItems.length
+              6 + techStackItems.length + codingItems.length + appItems.length
             }
           />
         </VStack>

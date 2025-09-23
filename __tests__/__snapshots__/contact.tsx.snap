@@ -12,14 +12,28 @@ exports[`Contact renders contact page unchanged 1`] = `
       <div
         class="text-center"
       >
-        <h2>
-          Contact
-        </h2>
-        <span
-          class="block text-sm"
+        <div
+          class="animate-enter"
+          style="animation-delay: 0s;"
         >
-          Send me a message.
-        </span>
+          <h2>
+            Contact
+          </h2>
+        </div>
+        <div
+          class="animate-enter"
+          style="animation-delay: 0.06s;"
+        >
+          <span
+            class="block text-sm"
+          >
+            Send me a message.
+          </span>
+        </div>
+        <div
+          class="animate-enter"
+          style="animation-delay: 0.12s;"
+        />
       </div>
     </div>
     <div
