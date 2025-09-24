@@ -21,7 +21,7 @@ const ItemList = ({
     <div className="flex flex-col gap-2">
       <h3
         className="animate-appear"
-        style={{ animationDelay: getAnimationDelay(startIndex) }}
+        style={{ animationDelay: getAnimationDelay(startIndex, 0.03) }}
       >
         {title}
       </h3>
@@ -31,7 +31,7 @@ const ItemList = ({
             key={index}
             className="animate-appear"
             style={{
-              animationDelay: getAnimationDelay(1 + startIndex + index),
+              animationDelay: getAnimationDelay(1 + startIndex + index, 0.03),
             }}
           >
             {item.href ? (

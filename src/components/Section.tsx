@@ -16,8 +16,8 @@ type SectionProps = {
   disableAnimations?: boolean;
 };
 
-export const getAnimationDelay = (index: number) => {
-  return `${index * 0.06}s`;
+export const getAnimationDelay = (index: number, duration = 0.06) => {
+  return `${index * duration}s`;
 };
 
 const Section: React.FC<SectionProps> = (props) => {

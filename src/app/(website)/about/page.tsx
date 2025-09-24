@@ -60,7 +60,7 @@ export default function About() {
               <div
                 key={keyword}
                 className="animate-appear"
-                style={{ animationDelay: getAnimationDelay(2 + index / 4) }}
+                style={{ animationDelay: getAnimationDelay(2 + index / 8) }}
               >
                 <Keyword>{keyword}</Keyword>
               </div>
@@ -79,7 +79,7 @@ export default function About() {
               className="animate-appear leading-relaxed"
               style={{
                 animationDelay: getAnimationDelay(
-                  2 + KeywordList.length / 4 / 2,
+                  2 + KeywordList.length / 8 / 2,
                 ),
               }}
             >
@@ -95,7 +95,7 @@ export default function About() {
         headerAlign="left"
         name="career"
         title="Career"
-        animationIndex={2 + KeywordList.length / 4}
+        animationIndex={2 + KeywordList.length / 8}
       >
         <VStack className="items-start gap-8">
           {career.map((job, index) => (
@@ -104,7 +104,7 @@ export default function About() {
               key={index}
               style={{
                 animationDelay: getAnimationDelay(
-                  3 + KeywordList.length / 4 + index,
+                  3 + KeywordList.length / 8 + index,
                 ),
               }}
             >
