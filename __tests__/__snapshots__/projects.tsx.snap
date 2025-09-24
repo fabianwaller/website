@@ -7,11 +7,11 @@ exports[`Projects renders projects page unchanged 1`] = `
     style="position: relative; --glow-size: 300px;"
   >
     <div
-      class="animate-appear h-full rounded-lg animate-appear relative"
+      class="motion-reduce:animate-appear-reduced h-full rounded-lg motion-safe:animate-appear motion-reduce:animate-appear-reduced relative motion-safe:animate-appear"
       style="animation-delay: 0.12s; --glow-top: 0px; --glow-left: 0px;"
     >
       <div
-        class="animate-appear h-full rounded-lg after:inset-0.25 pointer-events-none absolute inset-0 mix-blend-soft-light after:absolute after:rounded-[inherit] after:bg-background/90 after:content-['']"
+        class="motion-reduce:animate-appear-reduced h-full rounded-lg motion-safe:animate-appear after:inset-0.25 pointer-events-none absolute inset-0 mix-blend-soft-light after:absolute after:rounded-[inherit] after:bg-background/90 after:content-['']"
       />
       <div
         class="shadow-custom-soft grid gap-4 overflow-hidden rounded-lg bg-card px-6 py-4 h-full"

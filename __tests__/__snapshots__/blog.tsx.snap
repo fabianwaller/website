@@ -13,7 +13,7 @@ exports[`Blog renders blog page unchanged 1`] = `
         class="text-center"
       >
         <div
-          class="animate-appear"
+          class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
           style="animation-delay: 0s;"
         >
           <h2>
@@ -21,7 +21,7 @@ exports[`Blog renders blog page unchanged 1`] = `
           </h2>
         </div>
         <div
-          class="animate-appear"
+          class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
           style="animation-delay: 0.06s;"
         >
           <span
@@ -31,7 +31,7 @@ exports[`Blog renders blog page unchanged 1`] = `
           </span>
         </div>
         <div
-          class="animate-appear"
+          class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
           style="animation-delay: 0.12s;"
         />
       </div>
@@ -43,7 +43,7 @@ exports[`Blog renders blog page unchanged 1`] = `
         class="flex flex-col items-center justify-center gap-4"
       >
         <p
-          class="animate-appear leading-relaxed"
+          class="motion-reduce:animate-appear-reduced leading-relaxed motion-safe:animate-appear"
           style="animation-delay: 0.12s;"
         >
           Here you'll find all my public thoughts, notes, learnings and experiences. I share whatever I want, ranging from programming to math, over books and podcasts and much more. Scroll down to check them out!
@@ -52,7 +52,7 @@ exports[`Blog renders blog page unchanged 1`] = `
           class="flex flex-col items-center justify-center gap-4"
         >
           <a
-            class="animate-appear"
+            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
             href="/blog/slug1"
             style="animation-delay: 0.18s;"
           >
@@ -87,7 +87,7 @@ exports[`Blog renders blog page unchanged 1`] = `
             </div>
           </a>
           <a
-            class="animate-appear"
+            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
             href="/blog/slug2"
             style="animation-delay: 0.24s;"
           >

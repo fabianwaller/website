@@ -59,7 +59,7 @@ export default function About() {
             {KeywordList.map((keyword, index) => (
               <div
                 key={keyword}
-                className="animate-appear"
+                className="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
                 style={{ animationDelay: getAnimationDelay(2 + index / 8) }}
               >
                 <Keyword>{keyword}</Keyword>
@@ -68,7 +68,7 @@ export default function About() {
           </div>
           <VStack>
             <p
-              className="animate-appear leading-relaxed"
+              className="motion-reduce:animate-appear-reduced leading-relaxed motion-safe:animate-appear"
               style={{ animationDelay: getAnimationDelay(2) }}
             >
               Full-stack software engineer with a strong foundation in
@@ -76,7 +76,7 @@ export default function About() {
               and user experiences, and artificial intelligence.
             </p>
             <p
-              className="animate-appear leading-relaxed"
+              className="motion-reduce:animate-appear-reduced leading-relaxed motion-safe:animate-appear"
               style={{
                 animationDelay: getAnimationDelay(
                   2 + KeywordList.length / 8 / 2,
@@ -100,7 +100,7 @@ export default function About() {
         <VStack className="items-start gap-8">
           {career.map((job, index) => (
             <VStack
-              className="animate-appear items-start gap-2"
+              className="motion-reduce:animate-appear-reduced items-start gap-2 motion-safe:animate-appear"
               key={index}
               style={{
                 animationDelay: getAnimationDelay(

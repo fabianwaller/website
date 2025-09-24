@@ -104,7 +104,7 @@ export default function Uses() {
     >
       <VStack>
         <p
-          className="animate-appear leading-relaxed"
+          className="motion-reduce:animate-appear-reduced leading-relaxed motion-safe:animate-appear"
           style={{ animationDelay: getAnimationDelay(2) }}
         >
           As an developer, I&apos;ve been spending hours and hours at my desk

@@ -13,7 +13,7 @@ exports[`Contact renders contact page unchanged 1`] = `
         class="text-center"
       >
         <div
-          class="animate-appear"
+          class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
           style="animation-delay: 0s;"
         >
           <h2>
@@ -21,7 +21,7 @@ exports[`Contact renders contact page unchanged 1`] = `
           </h2>
         </div>
         <div
-          class="animate-appear"
+          class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
           style="animation-delay: 0.06s;"
         >
           <span
@@ -31,7 +31,7 @@ exports[`Contact renders contact page unchanged 1`] = `
           </span>
         </div>
         <div
-          class="animate-appear"
+          class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
           style="animation-delay: 0.12s;"
         />
       </div>
@@ -44,7 +44,7 @@ exports[`Contact renders contact page unchanged 1`] = `
           class="flex flex-col justify-center gap-4 items-stretch"
         >
           <div
-            class="animate-appear flex flex-col space-y-4 md:flex-row md:space-x-2 md:space-y-0"
+            class="motion-reduce:animate-appear-reduced flex flex-col space-y-4 motion-safe:animate-appear md:flex-row md:space-x-2 md:space-y-0"
             style="animation-delay: 0.12s;"
           >
             <div
@@ -97,7 +97,7 @@ exports[`Contact renders contact page unchanged 1`] = `
             </div>
           </div>
           <div
-            class="animate-appear"
+            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
             style="animation-delay: 0.12s;"
           >
             <div
@@ -125,7 +125,7 @@ exports[`Contact renders contact page unchanged 1`] = `
             </div>
           </div>
           <div
-            class="animate-appear"
+            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
             style="animation-delay: 0.12s;"
           >
             <div
@@ -152,7 +152,7 @@ exports[`Contact renders contact page unchanged 1`] = `
             </div>
           </div>
           <div
-            class="animate-appear w-full"
+            class="motion-reduce:animate-appear-reduced w-full motion-safe:animate-appear"
             style="animation-delay: 0.12s;"
           >
             <button

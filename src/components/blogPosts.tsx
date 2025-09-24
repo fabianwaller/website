@@ -21,7 +21,7 @@ const BlogPosts = () => {
         <Link
           href={`/blog/${post.slug}`}
           key={post.slug}
-          className="animate-appear"
+          className="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
           style={{ animationDelay: getAnimationDelay(3 + index) }}
         >
           <div

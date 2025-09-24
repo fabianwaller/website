@@ -82,7 +82,7 @@ const ContactForm = () => {
       <form onSubmit={form.handleSubmit(onSubmit)}>
         <VStack className="items-stretch">
           <div
-            className="animate-appear flex flex-col space-y-4 md:flex-row md:space-x-2 md:space-y-0"
+            className="motion-reduce:animate-appear-reduced flex flex-col space-y-4 motion-safe:animate-appear md:flex-row md:space-x-2 md:space-y-0"
             style={{ animationDelay: getAnimationDelay(2) }}
           >
             <FormField
@@ -113,7 +113,7 @@ const ContactForm = () => {
             />
           </div>
           <div
-            className="animate-appear"
+            className="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
             style={{ animationDelay: getAnimationDelay(2) }}
           >
             <FormField
@@ -134,7 +134,7 @@ const ContactForm = () => {
             />
           </div>
           <div
-            className="animate-appear"
+            className="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
             style={{ animationDelay: getAnimationDelay(2) }}
           >
             <FormField
@@ -152,7 +152,7 @@ const ContactForm = () => {
             />
           </div>
           <div
-            className="animate-appear w-full"
+            className="motion-reduce:animate-appear-reduced w-full motion-safe:animate-appear"
             style={{ animationDelay: getAnimationDelay(2) }}
           >
             <Button

@@ -11,7 +11,7 @@ const Blog: React.FC = () => {
     >
       <VStack>
         <p
-          className="animate-appear leading-relaxed"
+          className="motion-reduce:animate-appear-reduced leading-relaxed motion-safe:animate-appear"
           style={{ animationDelay: getAnimationDelay(2) }}
         >
           Here you&apos;ll find all my public thoughts, notes, learnings and
