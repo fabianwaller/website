@@ -14,10 +14,10 @@ export default function Home() {
         <HeroBlob />
         <VStack className="items-start pb-8">
           <h1 className="animate-appear">{title}</h1>
-          <p className="animate-appear max-w-[35em] leading-relaxed">
+          <p className="max-w-[35em] animate-appear leading-relaxed">
             Computer science student at Saarland University obsessed with
             fullstack web development working at{" "}
-            <Link href={"https://ergosign.de/de/"}>
+            <Link href={"https://ergosign.de/de/"} target="_blank">
               <Button variant="link">Ergosign</Button>
             </Link>
             .
