@@ -39,13 +39,17 @@ const compare = (a: any, b: any) => {
 const Projects = async () => {
   const data: any[] = await getRepos();
 
+  const filteredData = data.filter(
+    (repo) => repo.full_name !== "fabianwaller/fabianwaller",
+  );
+
   return (
     <Section
       name="projects"
       title="Projects"
       subtitle="my private projects and public code repos"
     >
-      <ProjectCards data={data} />
+      <ProjectCards data={filteredData} />
     </Section>
   );
 };

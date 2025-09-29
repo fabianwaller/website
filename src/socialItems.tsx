@@ -8,20 +8,9 @@ import {
 
 export const socialItems = [
   {
-    href: "/contact",
-    title: "Contact",
-    icon: <Mail className="h-full w-full" />,
-  },
-  {
     href: "https://x.com/fabianwallerr",
-    title: "X",
+    title: "Twitter",
     icon: <Twitter className="h-full w-full" />,
-    blank: true,
-  },
-  {
-    href: "https://www.instagram.com/fabianwallerr/",
-    title: "Instagram",
-    icon: <FaInstagram className="h-full w-full" />,
     blank: true,
   },
   {
@@ -37,10 +26,22 @@ export const socialItems = [
     blank: true,
   },
   {
+    href: "https://www.instagram.com/fabianwallerr/",
+    title: "Instagram",
+    icon: <FaInstagram className="h-full w-full" />,
+    blank: true,
+  },
+  {
     href: "/rss",
     title: "RSS Feed",
     titleShort: "Feed",
     icon: <Rss className="h-full w-full" />,
     blank: true,
+  },
+  {
+    href: "/contact",
+    title: "Contact",
+    icon: <Mail className="h-full w-full" />,
+    blank: false,
   },
 ];

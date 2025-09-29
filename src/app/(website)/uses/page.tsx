@@ -1,6 +1,5 @@
 import ItemList, { itemsType } from "@/components/ItemList";
-import ScrollAnimated from "@/components/ScrollAnimated";
-import Section from "@/components/Section";
+import Section, { getAnimationDelay } from "@/components/Section";
 import VStack from "@/components/VStack";
 
 const deskItems: itemsType = [
@@ -104,19 +103,34 @@ export default function Uses() {
       subtitle="what software and hardware I use"
     >
       <VStack>
-        <ScrollAnimated>
-          <p className="leading-relaxed">
-            As an developer, I&apos;ve been spending hours and hours at my desk
-            every day. So, I&apos;ve been continuously improving my workspace in
-            order to boost my productivity. So, here is a living snapshot and a
-            place to point curious people to when I get asked.
-          </p>
-        </ScrollAnimated>
+        <p
+          className="motion-reduce:animate-appear-reduced leading-relaxed motion-safe:animate-appear"
+          style={{ animationDelay: getAnimationDelay(2) }}
+        >
+          As an developer, I&apos;ve been spending hours and hours at my desk
+          every day. So, I&apos;ve been continuously improving my workspace in
+          order to boost my productivity. So, here is a living snapshot and a
+          place to point curious people to when I get asked.
+        </p>
         <VStack className="w-full items-start">
-          <ItemList title="Tech Stack" items={techStackItems} />
-          <ItemList title="Coding" items={codingItems} />
-          <ItemList title="Apps" items={appItems} />
-          <ItemList title="Desk" items={deskItems} />
+          <ItemList title="Tech Stack" items={techStackItems} startIndex={3} />
+          <ItemList
+            title="Coding"
+            items={codingItems}
+            startIndex={4 + techStackItems.length}
+          />
+          <ItemList
+            title="Apps"
+            items={appItems}
+            startIndex={5 + techStackItems.length + codingItems.length}
+          />
+          <ItemList
+            title="Desk"
+            items={deskItems}
+            startIndex={
+              6 + techStackItems.length + codingItems.length + appItems.length
+            }
+          />
         </VStack>
       </VStack>
     </Section>

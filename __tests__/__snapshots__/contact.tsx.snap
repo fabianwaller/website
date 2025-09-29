@@ -12,14 +12,28 @@ exports[`Contact renders contact page unchanged 1`] = `
       <div
         class="text-center"
       >
-        <h2>
-          Contact
-        </h2>
-        <span
-          class="block text-sm"
+        <div
+          class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+          style="animation-delay: 0s;"
         >
-          Send me a message.
-        </span>
+          <h2>
+            Contact
+          </h2>
+        </div>
+        <div
+          class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+          style="animation-delay: 0.06s;"
+        >
+          <span
+            class="block text-sm"
+          >
+            Send me a message.
+          </span>
+        </div>
+        <div
+          class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+          style="animation-delay: 0.12s;"
+        />
       </div>
     </div>
     <div
@@ -30,7 +44,8 @@ exports[`Contact renders contact page unchanged 1`] = `
           class="flex flex-col justify-center gap-4 items-stretch"
         >
           <div
-            class="flex flex-col space-y-4 md:flex-row md:space-x-2 md:space-y-0"
+            class="motion-reduce:animate-appear-reduced flex flex-col space-y-4 motion-safe:animate-appear md:flex-row md:space-x-2 md:space-y-0"
+            style="animation-delay: 0.12s;"
           >
             <div
               class="w-full space-y-2"
@@ -82,81 +97,96 @@ exports[`Contact renders contact page unchanged 1`] = `
             </div>
           </div>
           <div
-            class="w-full space-y-2"
+            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
+            style="animation-delay: 0.12s;"
           >
-            <label
-              class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-              for="«r2»-form-item"
-            >
-              Email
-            </label>
             <div
-              class="group/input rounded-lg p-[2px] transition duration-300"
+              class="w-full space-y-2"
             >
-              <input
-                aria-describedby="«r2»-form-item-description"
-                aria-invalid="false"
-                class="dark:placeholder-text-neutral-600 duration-400 transitionplaceholder:text-neutral-400 flex h-10 w-full rounded-md border border-none border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-2 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-input group-hover/input:shadow-none"
-                id="«r2»-form-item"
-                name="email"
-                placeholder="joel@miller.com"
-                value=""
-              />
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="«r2»-form-item"
+              >
+                Email
+              </label>
+              <div
+                class="group/input rounded-lg p-[2px] transition duration-300"
+              >
+                <input
+                  aria-describedby="«r2»-form-item-description"
+                  aria-invalid="false"
+                  class="dark:placeholder-text-neutral-600 duration-400 transitionplaceholder:text-neutral-400 flex h-10 w-full rounded-md border border-none border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-2 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-input group-hover/input:shadow-none"
+                  id="«r2»-form-item"
+                  name="email"
+                  placeholder="joel@miller.com"
+                  value=""
+                />
+              </div>
             </div>
           </div>
           <div
-            class="w-full space-y-2"
+            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
+            style="animation-delay: 0.12s;"
           >
-            <label
-              class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-              for="«r3»-form-item"
-            >
-              Message
-            </label>
             <div
-              class="group/input rounded-lg p-[2px] transition duration-300"
+              class="w-full space-y-2"
             >
-              <textarea
-                aria-describedby="«r3»-form-item-description"
-                aria-invalid="false"
-                class="dark:placeholder-text-neutral-600 duration-400 transitionplaceholder:text-neutral-400 flex min-h-[80px] w-full rounded-md border border-none border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-2 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-input group-hover/input:shadow-none"
-                id="«r3»-form-item"
-                name="message"
-                placeholder="Your message..."
-              />
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="«r3»-form-item"
+              >
+                Message
+              </label>
+              <div
+                class="group/input rounded-lg p-[2px] transition duration-300"
+              >
+                <textarea
+                  aria-describedby="«r3»-form-item-description"
+                  aria-invalid="false"
+                  class="dark:placeholder-text-neutral-600 duration-400 transitionplaceholder:text-neutral-400 flex min-h-[80px] w-full rounded-md border border-none border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-2 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-input group-hover/input:shadow-none"
+                  id="«r3»-form-item"
+                  name="message"
+                  placeholder="Your message..."
+                />
+              </div>
             </div>
           </div>
-          <button
-            class="relative inline-flex items-center justify-center gap-1 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 group/btn bg-gradient-to-br from-black to-neutral-600 font-medium text-background shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-white dark:from-white dark:to-neutral-400 dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
-            type="submit"
+          <div
+            class="motion-reduce:animate-appear-reduced w-full motion-safe:animate-appear"
+            style="animation-delay: 0.12s;"
           >
-            Send 
-            <svg
-              class="lucide lucide-arrow-right"
-              fill="none"
-              height="24"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              width="24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              class="relative inline-flex items-center justify-center gap-1 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 group/btn bg-gradient-to-br from-black to-neutral-600 font-medium text-background shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-white dark:from-white dark:to-neutral-400 dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset] w-full"
+              type="submit"
             >
-              <path
-                d="M5 12h14"
+              Send 
+              <svg
+                class="lucide lucide-arrow-right"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 12h14"
+                />
+                <path
+                  d="m12 5 7 7-7 7"
+                />
+              </svg>
+              <span
+                class="absolute inset-x-0 -bottom-px block h-px w-full bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 transition duration-500 group-hover/btn:opacity-100"
               />
-              <path
-                d="m12 5 7 7-7 7"
+              <span
+                class="absolute inset-x-10 -bottom-px mx-auto block h-px w-1/2 bg-gradient-to-r from-transparent via-primary-foreground to-transparent opacity-0 blur-sm transition duration-500 group-hover/btn:opacity-100"
               />
-            </svg>
-            <span
-              class="absolute inset-x-0 -bottom-px block h-px w-full bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 transition duration-500 group-hover/btn:opacity-100"
-            />
-            <span
-              class="absolute inset-x-10 -bottom-px mx-auto block h-px w-1/2 bg-gradient-to-r from-transparent via-primary-foreground to-transparent opacity-0 blur-sm transition duration-500 group-hover/btn:opacity-100"
-            />
-          </button>
+            </button>
+          </div>
         </div>
       </form>
     </div>

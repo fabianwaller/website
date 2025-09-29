@@ -21,6 +21,7 @@ import { BottomGradient } from "./ui/animated-bottom-gradient";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import { getAnimationDelay } from "./Section";
 
 const formSchema = z.object({
   firstname: z.string().min(2, {
@@ -80,7 +81,10 @@ const ContactForm = () => {
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)}>
         <VStack className="items-stretch">
-          <div className="flex flex-col space-y-4 md:flex-row md:space-x-2 md:space-y-0">
+          <div
+            className="motion-reduce:animate-appear-reduced flex flex-col space-y-4 motion-safe:animate-appear md:flex-row md:space-x-2 md:space-y-0"
+            style={{ animationDelay: getAnimationDelay(2) }}
+          >
             <FormField
               control={form.control}
               name="firstname"
@@ -108,39 +112,59 @@ const ContactForm = () => {
               )}
             />
           </div>
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Email</FormLabel>
-                <FormControl>
-                  <Input placeholder="joel@miller.com" {...field} />
-                </FormControl>
-                {/* <FormDescription>
+          <div
+            className="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
+            style={{ animationDelay: getAnimationDelay(2) }}
+          >
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Email</FormLabel>
+                  <FormControl>
+                    <Input placeholder="joel@miller.com" {...field} />
+                  </FormControl>
+                  {/* <FormDescription>
                   I need your email to answer to your message.
-                </FormDescription> */}
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="message"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Message</FormLabel>
-                <FormControl>
-                  <Textarea placeholder="Your message..." {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <Button type="submit" variant="secondary" disabled={sending}>
-            Send <ArrowRight />
-            <BottomGradient />
-          </Button>
+                  </FormDescription> */}
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
+          <div
+            className="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
+            style={{ animationDelay: getAnimationDelay(2) }}
+          >
+            <FormField
+              control={form.control}
+              name="message"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Message</FormLabel>
+                  <FormControl>
+                    <Textarea placeholder="Your message..." {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
+          <div
+            className="motion-reduce:animate-appear-reduced w-full motion-safe:animate-appear"
+            style={{ animationDelay: getAnimationDelay(2) }}
+          >
+            <Button
+              type="submit"
+              variant="secondary"
+              disabled={sending}
+              className="w-full"
+            >
+              Send <ArrowRight />
+              <BottomGradient />
+            </Button>
+          </div>
         </VStack>
       </form>
     </Form>

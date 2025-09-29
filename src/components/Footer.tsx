@@ -1,11 +1,10 @@
 "use client";
 
 import Container from "./Container";
-import Logo from "@/components/logo";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { navigationItems } from "@/components/navigation";
 import { socialItems } from "@/socialItems";
+import { getAnimationDelay } from "./Section";
 
 const Footer: React.FC = () => {
   const pathname = usePathname();
@@ -15,7 +14,10 @@ const Footer: React.FC = () => {
   }
 
   return (
-    <footer className="relative mt-8">
+    <footer
+      className="relative mt-8 animate-appear-reduced"
+      style={{ animationDelay: getAnimationDelay(8) }}
+    >
       <div className="rounded-t-xl border-t-1 border-solid py-16">
         <Container className="grid gap-y-14">
           {/* <div>

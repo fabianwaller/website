@@ -99,8 +99,8 @@
 
     --foreground: var(--body-h), 24%, 99%;
 
-    --primary: var(--body-h), 100%, 43.6%;
-    --primary-foreground: 293, 96.4%, 57.5%;
+    --primary: var(--body-h), 100%, 41.6%;
+    --primary-foreground: 293, 96.4%, 51.5%;
 
     --secondary: var(--body-h), 69%, 61%;
     --secondary-foreground: 210 40% 98%;
@@ -354,4 +354,13 @@ pre,
 code,
 figure {
   @apply overflow-x-auto;
+}
+
+
+@media (min-width: 768px) {
+
+  .motion-safe\:animate-appear,
+  .motion-reduce\:animate-appear-reduced {
+    animation-delay: var(--animation-delay-md);
+  }
 }

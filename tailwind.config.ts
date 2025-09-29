@@ -1,3 +1,4 @@
+import { delay } from "framer-motion";
 import type { Config } from "tailwindcss";
 
 const config = {
@@ -97,10 +98,34 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "appear": {
+          '0%': {
+            opacity: '0',
+            blur: '1px',
+            transform: 'translateY(20px)',
+          },
+          '100%': {
+            opacity: '1',
+            blur: '0px',
+            transform: 'translateY(0)'
+          },
+        },
+        "appear-reduced": {
+          '0%': {
+            opacity: '0',
+            blur: '1px',
+          },
+          '100%': {
+            opacity: '1',
+            blur: '0px',
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        'appear': 'appear 0.6s ease both',
+        'appear-reduced': 'appear-reduced 0.6s ease both',
       },
       transitionTimingFunction: {
         'in-quad': 'var(--ease-in-quad)',
