@@ -355,3 +355,12 @@ code,
 figure {
   @apply overflow-x-auto;
 }
+
+
+@media (min-width: 768px) {
+
+  .motion-safe\:animate-appear,
+  .motion-reduce\:animate-appear-reduced {
+    animation-delay: var(--animation-delay-md);
+  }
+}

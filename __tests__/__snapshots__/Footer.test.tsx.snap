@@ -3,7 +3,8 @@
 exports[`Footer renders Footer unchanged 1`] = `
 <DocumentFragment>
   <footer
-    class="relative mt-8"
+    class="relative mt-8 animate-appear-reduced"
+    style="animation-delay: 0.48s;"
   >
     <div
       class="rounded-t-xl border-t-1 border-solid py-16"
@@ -17,35 +18,6 @@ exports[`Footer renders Footer unchanged 1`] = `
           <div
             class="flex gap-6 text-xl"
           >
-            <a
-              class="h-8 w-8 hover:text-primary"
-              href="/contact"
-              target="_self"
-            >
-              <svg
-                class="lucide lucide-mail h-full w-full"
-                fill="none"
-                height="24"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                width="24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  height="16"
-                  rx="2"
-                  width="20"
-                  x="2"
-                  y="4"
-                />
-                <path
-                  d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
-                />
-              </svg>
-            </a>
             <a
               class="h-8 w-8 hover:text-primary"
               href="https://x.com/fabianwallerr"
@@ -153,6 +125,35 @@ exports[`Footer renders Footer unchanged 1`] = `
                   cx="5"
                   cy="19"
                   r="1"
+                />
+              </svg>
+            </a>
+            <a
+              class="h-8 w-8 hover:text-primary"
+              href="/contact"
+              target="_self"
+            >
+              <svg
+                class="lucide lucide-mail h-full w-full"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  height="16"
+                  rx="2"
+                  width="20"
+                  x="2"
+                  y="4"
+                />
+                <path
+                  d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
                 />
               </svg>
             </a>

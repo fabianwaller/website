@@ -13,7 +13,7 @@ exports[`About renders about page unchanged 1`] = `
         class="text-center"
       >
         <div
-          class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
+          class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
           style="animation-delay: 0s;"
         >
           <h2>
@@ -21,7 +21,7 @@ exports[`About renders about page unchanged 1`] = `
           </h2>
         </div>
         <div
-          class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
+          class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
           style="animation-delay: 0.06s;"
         >
           <span
@@ -31,7 +31,7 @@ exports[`About renders about page unchanged 1`] = `
           </span>
         </div>
         <div
-          class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
+          class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
           style="animation-delay: 0.12s;"
         />
       </div>
@@ -46,8 +46,8 @@ exports[`About renders about page unchanged 1`] = `
           class="flex flex-wrap items-center justify-start gap-x-2 gap-y-4"
         >
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.12s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.12s; --animation-delay-md: 0.12s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -56,8 +56,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.1275s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.1275s; --animation-delay-md: 0.1275s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -66,8 +66,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.135s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.135s; --animation-delay-md: 0.135s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -76,8 +76,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.1425s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.1425s; --animation-delay-md: 0.1425s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -86,8 +86,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.15s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.15s; --animation-delay-md: 0.15s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -96,8 +96,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.1575s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.1575s; --animation-delay-md: 0.1575s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -106,8 +106,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.16499999999999998s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.16499999999999998s; --animation-delay-md: 0.16499999999999998s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -116,8 +116,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.1725s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.1725s; --animation-delay-md: 0.1725s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -126,8 +126,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.18s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.18s; --animation-delay-md: 0.18s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -136,8 +136,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.1875s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.1875s; --animation-delay-md: 0.1875s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -146,8 +146,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.195s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.195s; --animation-delay-md: 0.195s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -156,8 +156,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.20249999999999999s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.20249999999999999s; --animation-delay-md: 0.20249999999999999s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -166,8 +166,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.21s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.21s; --animation-delay-md: 0.21s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -176,8 +176,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.2175s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.2175s; --animation-delay-md: 0.2175s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -186,8 +186,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.22499999999999998s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.22499999999999998s; --animation-delay-md: 0.22499999999999998s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -196,8 +196,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.23249999999999998s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.23249999999999998s; --animation-delay-md: 0.23249999999999998s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -206,8 +206,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.24s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.24s; --animation-delay-md: 0.24s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -216,8 +216,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.2475s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.2475s; --animation-delay-md: 0.2475s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -226,8 +226,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.255s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.255s; --animation-delay-md: 0.255s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -236,8 +236,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.2625s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.2625s; --animation-delay-md: 0.2625s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -246,8 +246,8 @@ exports[`About renders about page unchanged 1`] = `
             </span>
           </div>
           <div
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-            style="animation-delay: 0.27s;"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.27s; --animation-delay-md: 0.27s; animation-delay: var(--animation-delay-sm);"
           >
             <span
               class="inline-block rounded-lg px-2 py-2 text-sm text-title-normal shadow-custom-soft"
@@ -260,14 +260,14 @@ exports[`About renders about page unchanged 1`] = `
           class="flex flex-col items-center justify-center gap-4"
         >
           <p
-            class="motion-reduce:animate-appear-reduced leading-relaxed motion-safe:animate-appear"
-            style="animation-delay: 0.12s;"
+            class="leading-relaxed motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.27749999999999997s; --animation-delay-md: 0.12s; animation-delay: var(--animation-delay-sm);"
           >
             Full-stack software engineer with a strong foundation in JavaScript, and TypeScript, mainly interested in user interfaces and user experiences, and artificial intelligence.
           </p>
           <p
-            class="motion-reduce:animate-appear-reduced leading-relaxed motion-safe:animate-appear"
-            style="animation-delay: 0.19874999999999998s;"
+            class="leading-relaxed motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+            style="--animation-delay-sm: 0.33749999999999997s; --animation-delay-md: 0.19874999999999998s; animation-delay: var(--animation-delay-sm);"
           >
             Skilled in building scalable solutions across diverse tech stacks, including Next.js, Supabase, and Tailwind CSS, with a keen interest in privacy-focused and developer-centric tools.
           </p>
@@ -286,20 +286,20 @@ exports[`About renders about page unchanged 1`] = `
         class="text-left"
       >
         <div
-          class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-          style="animation-delay: 0.27749999999999997s;"
+          class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+          style="animation-delay: 0.39749999999999996s;"
         >
           <h3>
             Career
           </h3>
         </div>
         <div
-          class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-          style="animation-delay: 0.33749999999999997s;"
+          class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+          style="animation-delay: 0.45749999999999996s;"
         />
         <div
-          class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-          style="animation-delay: 0.39749999999999996s;"
+          class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+          style="animation-delay: 0.5175s;"
         />
       </div>
     </div>
@@ -310,8 +310,8 @@ exports[`About renders about page unchanged 1`] = `
         class="flex flex-col justify-center items-start gap-8"
       >
         <div
-          class="flex flex-col justify-center motion-reduce:animate-appear-reduced items-start gap-2 motion-safe:animate-appear"
-          style="animation-delay: 0.33749999999999997s;"
+          class="flex flex-col justify-center items-start gap-2 motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+          style="animation-delay: 0.45749999999999996s;"
         >
           <h4
             class="mb-0"
@@ -358,8 +358,8 @@ exports[`About renders about page unchanged 1`] = `
           </div>
         </div>
         <div
-          class="flex flex-col justify-center motion-reduce:animate-appear-reduced items-start gap-2 motion-safe:animate-appear"
-          style="animation-delay: 0.39749999999999996s;"
+          class="flex flex-col justify-center items-start gap-2 motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+          style="animation-delay: 0.5175s;"
         >
           <h4
             class="mb-0"

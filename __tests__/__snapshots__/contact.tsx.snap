@@ -13,7 +13,7 @@ exports[`Contact renders contact page unchanged 1`] = `
         class="text-center"
       >
         <div
-          class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
+          class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
           style="animation-delay: 0s;"
         >
           <h2>
@@ -21,7 +21,7 @@ exports[`Contact renders contact page unchanged 1`] = `
           </h2>
         </div>
         <div
-          class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
+          class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
           style="animation-delay: 0.06s;"
         >
           <span
@@ -31,7 +31,7 @@ exports[`Contact renders contact page unchanged 1`] = `
           </span>
         </div>
         <div
-          class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
+          class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
           style="animation-delay: 0.12s;"
         />
       </div>

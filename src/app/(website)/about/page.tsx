@@ -59,8 +59,14 @@ export default function About() {
             {KeywordList.map((keyword, index) => (
               <div
                 key={keyword}
-                className="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-                style={{ animationDelay: getAnimationDelay(2 + index / 8) }}
+                className="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+                style={
+                  {
+                    "--animation-delay-sm": getAnimationDelay(2 + index / 8),
+                    "--animation-delay-md": getAnimationDelay(2 + index / 8),
+                    animationDelay: "var(--animation-delay-sm)",
+                  } as React.CSSProperties & { [key: string]: string }
+                }
               >
                 <Keyword>{keyword}</Keyword>
               </div>
@@ -68,20 +74,34 @@ export default function About() {
           </div>
           <VStack>
             <p
-              className="motion-reduce:animate-appear-reduced leading-relaxed motion-safe:animate-appear"
-              style={{ animationDelay: getAnimationDelay(2) }}
+              className="leading-relaxed motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+              style={
+                {
+                  "--animation-delay-sm": getAnimationDelay(
+                    2 + KeywordList.length / 8,
+                  ),
+                  "--animation-delay-md": getAnimationDelay(2),
+                  animationDelay: "var(--animation-delay-sm)",
+                } as React.CSSProperties & { [key: string]: string }
+              }
             >
               Full-stack software engineer with a strong foundation in
               JavaScript, and TypeScript, mainly interested in user interfaces
               and user experiences, and artificial intelligence.
             </p>
             <p
-              className="motion-reduce:animate-appear-reduced leading-relaxed motion-safe:animate-appear"
-              style={{
-                animationDelay: getAnimationDelay(
-                  2 + KeywordList.length / 8 / 2,
-                ),
-              }}
+              className="leading-relaxed motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+              style={
+                {
+                  "--animation-delay-sm": getAnimationDelay(
+                    2 + KeywordList.length / 8 + 1,
+                  ),
+                  "--animation-delay-md": getAnimationDelay(
+                    2 + KeywordList.length / 8 / 2,
+                  ),
+                  animationDelay: "var(--animation-delay-sm)",
+                } as React.CSSProperties & { [key: string]: string }
+              }
             >
               Skilled in building scalable solutions across diverse tech stacks,
               including Next.js, Supabase, and Tailwind CSS, with a keen
@@ -95,16 +115,16 @@ export default function About() {
         headerAlign="left"
         name="career"
         title="Career"
-        animationIndex={2 + KeywordList.length / 8}
+        animationIndex={2 + KeywordList.length / 8 + 2}
       >
         <VStack className="items-start gap-8">
           {career.map((job, index) => (
             <VStack
-              className="motion-reduce:animate-appear-reduced items-start gap-2 motion-safe:animate-appear"
+              className="items-start gap-2 motion-safe:animate-appear motion-reduce:animate-appear-reduced"
               key={index}
               style={{
                 animationDelay: getAnimationDelay(
-                  3 + KeywordList.length / 8 + index,
+                  5 + KeywordList.length / 8 + index,
                 ),
               }}
             >

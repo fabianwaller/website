@@ -31,7 +31,7 @@ const Section: React.FC<SectionProps> = (props) => {
             className={
               props.disableAnimations
                 ? ""
-                : "motion-reduce:animate-appear-reduced motion-safe:animate-appear"
+                : "motion-safe:animate-appear motion-reduce:animate-appear-reduced"
             }
             style={{
               animationDelay: getAnimationDelay(props.animationIndex ?? 0),
@@ -47,7 +47,7 @@ const Section: React.FC<SectionProps> = (props) => {
             className={
               props.disableAnimations
                 ? ""
-                : "motion-reduce:animate-appear-reduced motion-safe:animate-appear"
+                : "motion-safe:animate-appear motion-reduce:animate-appear-reduced"
             }
             style={{
               animationDelay: getAnimationDelay(
@@ -61,7 +61,7 @@ const Section: React.FC<SectionProps> = (props) => {
             className={
               props.disableAnimations
                 ? ""
-                : "motion-reduce:animate-appear-reduced motion-safe:animate-appear"
+                : "motion-safe:animate-appear motion-reduce:animate-appear-reduced"
             }
             style={{
               animationDelay: getAnimationDelay(

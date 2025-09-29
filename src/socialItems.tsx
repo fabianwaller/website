@@ -8,14 +8,8 @@ import {
 
 export const socialItems = [
   {
-    href: "/contact",
-    title: "Contact",
-    icon: <Mail className="h-full w-full" />,
-    blank: false,
-  },
-  {
     href: "https://x.com/fabianwallerr",
-    title: "X",
+    title: "Twitter",
     icon: <Twitter className="h-full w-full" />,
     blank: true,
   },
@@ -43,5 +37,11 @@ export const socialItems = [
     titleShort: "Feed",
     icon: <Rss className="h-full w-full" />,
     blank: true,
+  },
+  {
+    href: "/contact",
+    title: "Contact",
+    icon: <Mail className="h-full w-full" />,
+    blank: false,
   },
 ];
