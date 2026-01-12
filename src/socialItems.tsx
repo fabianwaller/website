@@ -25,12 +25,12 @@ export const socialItems = [
     icon: <LinkedIn className="h-full w-full" />,
     blank: true,
   },
-  {
-    href: "https://www.instagram.com/fabianwallerr/",
-    title: "Instagram",
-    icon: <FaInstagram className="h-full w-full" />,
-    blank: true,
-  },
+  // {
+  //   href: "https://www.instagram.com/fabianwallerr/",
+  //   title: "Instagram",
+  //   icon: <FaInstagram className="h-full w-full" />,
+  //   blank: true,
+  // },
   {
     href: "/rss",
     title: "RSS Feed",
