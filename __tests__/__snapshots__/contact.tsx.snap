@@ -62,10 +62,11 @@ exports[`Contact renders contact page unchanged 1`] = `
                 <input
                   aria-describedby="test-id-4-form-item-description"
                   aria-invalid="false"
-                  class="dark:placeholder-text-neutral-600 duration-400 transitionplaceholder:text-neutral-400 flex h-10 w-full rounded-md border border-none border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-2 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-input group-hover/input:shadow-none"
+                  autocomplete="given-name"
+                  class="dark:placeholder-text-neutral-600 duration-400 transition flex h-10 w-full rounded-md border border-none border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-2 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-input group-hover/input:shadow-none"
                   id="test-id-4-form-item"
                   name="firstname"
-                  placeholder="Joel"
+                  placeholder="Joel…"
                   type="text"
                   value=""
                 />
@@ -86,10 +87,11 @@ exports[`Contact renders contact page unchanged 1`] = `
                 <input
                   aria-describedby="test-id-5-form-item-description"
                   aria-invalid="false"
-                  class="dark:placeholder-text-neutral-600 duration-400 transitionplaceholder:text-neutral-400 flex h-10 w-full rounded-md border border-none border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-2 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-input group-hover/input:shadow-none"
+                  autocomplete="family-name"
+                  class="dark:placeholder-text-neutral-600 duration-400 transition flex h-10 w-full rounded-md border border-none border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-2 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-input group-hover/input:shadow-none"
                   id="test-id-5-form-item"
                   name="lastname"
-                  placeholder="Miller"
+                  placeholder="Miller…"
                   type="text"
                   value=""
                 />
@@ -115,10 +117,12 @@ exports[`Contact renders contact page unchanged 1`] = `
                 <input
                   aria-describedby="test-id-6-form-item-description"
                   aria-invalid="false"
-                  class="dark:placeholder-text-neutral-600 duration-400 transitionplaceholder:text-neutral-400 flex h-10 w-full rounded-md border border-none border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-2 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-input group-hover/input:shadow-none"
+                  autocomplete="email"
+                  class="dark:placeholder-text-neutral-600 duration-400 transition flex h-10 w-full rounded-md border border-none border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-2 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-input group-hover/input:shadow-none"
                   id="test-id-6-form-item"
                   name="email"
-                  placeholder="joel@miller.com"
+                  placeholder="joel@miller.com…"
+                  type="email"
                   value=""
                 />
               </div>
@@ -143,10 +147,10 @@ exports[`Contact renders contact page unchanged 1`] = `
                 <textarea
                   aria-describedby="test-id-7-form-item-description"
                   aria-invalid="false"
-                  class="dark:placeholder-text-neutral-600 duration-400 transitionplaceholder:text-neutral-400 flex min-h-[80px] w-full rounded-md border border-none border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-2 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-input group-hover/input:shadow-none"
+                  class="dark:placeholder-text-neutral-600 duration-400 transition flex min-h-[80px] w-full rounded-md border border-none border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-2 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-input group-hover/input:shadow-none"
                   id="test-id-7-form-item"
                   name="message"
-                  placeholder="Your message..."
+                  placeholder="Your message…"
                 />
               </div>
             </div>
