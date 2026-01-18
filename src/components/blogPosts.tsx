@@ -6,9 +6,13 @@ import { useState } from "react";
 import { Card, CardHoverEffect } from "./card-hover-effect";
 import { useBlogPosts } from "@/provider/BlogPostsContext";
 import { CardContent, CardDescription } from "./ui/card";
-import { format } from "date-fns";
-import { de } from "date-fns/locale";
 import { getAnimationDelay } from "./Section";
+
+const dateFormatter = new Intl.DateTimeFormat("de-DE", {
+  day: "2-digit",
+  month: "2-digit",
+  year: "numeric",
+});
 
 const BlogPosts = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -41,9 +45,7 @@ const BlogPosts = () => {
                     <CardDescription>{post.metadata.summary}</CardDescription>
                   </div>
                   <span>
-                    {format(post.metadata.publishedAt, "dd.MM.yyyy", {
-                      locale: de,
-                    })}
+                    {dateFormatter.format(new Date(post.metadata.publishedAt))}
                   </span>
                 </div>
               </CardContent>

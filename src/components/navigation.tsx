@@ -104,7 +104,6 @@ export function Navigation() {
               onMouseLeave={() => setHoveredTab("")}
               onFocus={() => setHoveredTab(item.href)}
               onBlur={() => setHoveredTab("")}
-              aria-hidden={hoveredTab !== item.href}
             >
               <NavigationMenuLink
                 href={item.href}
@@ -114,9 +113,10 @@ export function Navigation() {
                   "flex h-fit flex-col gap-2 bg-transparent",
                 ])}
                 onClick={() => (menuOpen ? toggleMenu() : null)}
-                tabIndex={-1}
               >
-                <div className="size-4 sm:size-6 md:hidden">{item.icon}</div>
+                <div className="size-4 sm:size-6 md:hidden" aria-hidden="true">
+                  {item.icon}
+                </div>
                 {item.title}
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -149,7 +149,6 @@ export function Navigation() {
                 onFocus={() => setHoveredTab(item.href)}
                 onBlur={() => setHoveredTab("")}
                 ref={hoveredTab === item.href ? activeTabElementRef : null}
-                aria-hidden={hoveredTab !== item.href}
               >
                 <NavigationMenuLink
                   href={item.href}
@@ -160,8 +159,12 @@ export function Navigation() {
                     pathname == item.href ? activeClass : "underline",
                   ])}
                   onClick={() => (menuOpen ? toggleMenu() : null)}
+                  tabIndex={-1}
+                  aria-hidden="true"
                 >
-                  <div className="size-4 sm:size-6 md:hidden">{item.icon}</div>
+                  <div className="size-4 sm:size-6 md:hidden" aria-hidden="true">
+                    {item.icon}
+                  </div>
                   {item.title}
                 </NavigationMenuLink>
               </NavigationMenuItem>

@@ -45,6 +45,7 @@ const Footer: React.FC = () => {
                   href={item.href}
                   target={item.blank ? "_blank" : "_self"}
                   className="h-8 w-8 hover:text-primary"
+                  aria-label={item.title}
                 >
                   {item.icon}
                 </Link>

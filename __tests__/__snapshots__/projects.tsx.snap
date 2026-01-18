@@ -29,6 +29,7 @@ exports[`Projects renders projects page unchanged 1`] = `
                 class="flex flex-row flex-wrap items-center justify-start mb-0 gap-2 text-sm"
               >
                 <svg
+                  aria-hidden="true"
                   class="h-4 w-4"
                   fill="currentColor"
                   height="1em"
@@ -79,6 +80,7 @@ exports[`Projects renders projects page unchanged 1`] = `
                   class="flex flex-row flex-wrap items-center justify-start gap-1"
                 >
                   <svg
+                    aria-hidden="true"
                     class="lucide lucide-star h-4 w-4"
                     fill="none"
                     height="24"
@@ -100,6 +102,7 @@ exports[`Projects renders projects page unchanged 1`] = `
                   class="flex flex-row flex-wrap items-center justify-start gap-1"
                 >
                   <svg
+                    aria-hidden="true"
                     class="lucide lucide-calendar h-4 w-4"
                     fill="none"
                     height="24"
@@ -136,9 +139,11 @@ exports[`Projects renders projects page unchanged 1`] = `
                 target="_blank"
               >
                 <button
+                  aria-label="Open fabianwaller/Aura in new tab"
                   class="relative inline-flex items-center justify-center gap-1 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 hover:bg-card-foreground hover:text-primary-foreground left-2 ml-auto"
                 >
                   <svg
+                    aria-hidden="true"
                     class="lucide lucide-external-link h-4 w-4"
                     fill="none"
                     height="24"

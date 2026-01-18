@@ -77,14 +77,15 @@ export const Glow = (props: GlowProps) => {
   const element = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    element.current?.style.setProperty(
-      "--glow-top",
-      `${element.current?.offsetTop}px`,
-    );
-    element.current?.style.setProperty(
-      "--glow-left",
-      `${element.current?.offsetLeft}px`,
-    );
+    const el = element.current;
+    if (!el) return;
+
+    const updatePosition = () => {
+      el.style.setProperty("--glow-top", `${el.offsetTop}px`);
+      el.style.setProperty("--glow-left", `${el.offsetLeft}px`);
+    };
+
+    updatePosition();
   }, []);
 
   return (

@@ -36,16 +36,15 @@ exports[`Header renders Header unchanged 1`] = `
               dir="ltr"
             >
               <li
-                aria-hidden="true"
                 class="m-0 flex flex-col items-center bg-transparent"
               >
                 <a
-                  class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent"
+                  class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent"
                   data-radix-collection-item=""
                   href="/"
-                  tabindex="-1"
                 >
                   <div
+                    aria-hidden="true"
                     class="size-4 sm:size-6 md:hidden"
                   >
                     <svg
@@ -72,16 +71,15 @@ exports[`Header renders Header unchanged 1`] = `
                 </a>
               </li>
               <li
-                aria-hidden="true"
                 class="m-0 flex flex-col items-center bg-transparent"
               >
                 <a
-                  class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent"
+                  class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent"
                   data-radix-collection-item=""
                   href="/about"
-                  tabindex="-1"
                 >
                   <div
+                    aria-hidden="true"
                     class="size-4 sm:size-6 md:hidden"
                   >
                     <svg
@@ -110,16 +108,15 @@ exports[`Header renders Header unchanged 1`] = `
                 </a>
               </li>
               <li
-                aria-hidden="true"
                 class="m-0 flex flex-col items-center bg-transparent"
               >
                 <a
-                  class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent"
+                  class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent"
                   data-radix-collection-item=""
                   href="/projects"
-                  tabindex="-1"
                 >
                   <div
+                    aria-hidden="true"
                     class="size-4 sm:size-6 md:hidden"
                   >
                     <svg
@@ -152,16 +149,15 @@ exports[`Header renders Header unchanged 1`] = `
                 </a>
               </li>
               <li
-                aria-hidden="true"
                 class="m-0 flex flex-col items-center bg-transparent"
               >
                 <a
-                  class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent"
+                  class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent"
                   data-radix-collection-item=""
                   href="/uses"
-                  tabindex="-1"
                 >
                   <div
+                    aria-hidden="true"
                     class="size-4 sm:size-6 md:hidden"
                   >
                     <svg
@@ -185,16 +181,15 @@ exports[`Header renders Header unchanged 1`] = `
                 </a>
               </li>
               <li
-                aria-hidden="true"
                 class="m-0 flex flex-col items-center bg-transparent"
               >
                 <a
-                  class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent"
+                  class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent"
                   data-radix-collection-item=""
                   href="/blog"
-                  tabindex="-1"
                 >
                   <div
+                    aria-hidden="true"
                     class="size-4 sm:size-6 md:hidden"
                   >
                     <svg
@@ -245,15 +240,17 @@ exports[`Header renders Header unchanged 1`] = `
                 dir="ltr"
               >
                 <li
-                  aria-hidden="true"
                   class="relative m-0 flex flex-col items-center bg-transparent"
                 >
                   <a
-                    class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent text-primary-foreground underline-offset-4 underline"
+                    aria-hidden="true"
+                    class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent text-primary-foreground underline-offset-4 underline"
                     data-radix-collection-item=""
                     href="/"
+                    tabindex="-1"
                   >
                     <div
+                      aria-hidden="true"
                       class="size-4 sm:size-6 md:hidden"
                     >
                       <svg
@@ -280,15 +277,17 @@ exports[`Header renders Header unchanged 1`] = `
                   </a>
                 </li>
                 <li
-                  aria-hidden="true"
                   class="relative m-0 flex flex-col items-center bg-transparent"
                 >
                   <a
-                    class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent text-primary-foreground underline-offset-4 underline"
+                    aria-hidden="true"
+                    class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent text-primary-foreground underline-offset-4 underline"
                     data-radix-collection-item=""
                     href="/about"
+                    tabindex="-1"
                   >
                     <div
+                      aria-hidden="true"
                       class="size-4 sm:size-6 md:hidden"
                     >
                       <svg
@@ -317,15 +316,17 @@ exports[`Header renders Header unchanged 1`] = `
                   </a>
                 </li>
                 <li
-                  aria-hidden="true"
                   class="relative m-0 flex flex-col items-center bg-transparent"
                 >
                   <a
-                    class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent text-primary-foreground underline-offset-4 underline"
+                    aria-hidden="true"
+                    class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent text-primary-foreground underline-offset-4 underline"
                     data-radix-collection-item=""
                     href="/projects"
+                    tabindex="-1"
                   >
                     <div
+                      aria-hidden="true"
                       class="size-4 sm:size-6 md:hidden"
                     >
                       <svg
@@ -358,15 +359,17 @@ exports[`Header renders Header unchanged 1`] = `
                   </a>
                 </li>
                 <li
-                  aria-hidden="true"
                   class="relative m-0 flex flex-col items-center bg-transparent"
                 >
                   <a
-                    class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent text-primary-foreground underline-offset-4 underline"
+                    aria-hidden="true"
+                    class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent text-primary-foreground underline-offset-4 underline"
                     data-radix-collection-item=""
                     href="/uses"
+                    tabindex="-1"
                   >
                     <div
+                      aria-hidden="true"
                       class="size-4 sm:size-6 md:hidden"
                     >
                       <svg
@@ -390,15 +393,17 @@ exports[`Header renders Header unchanged 1`] = `
                   </a>
                 </li>
                 <li
-                  aria-hidden="true"
                   class="relative m-0 flex flex-col items-center bg-transparent"
                 >
                   <a
-                    class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent text-primary-foreground underline-offset-4 underline"
+                    aria-hidden="true"
+                    class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent text-primary-foreground underline-offset-4 underline"
                     data-radix-collection-item=""
                     href="/blog"
+                    tabindex="-1"
                   >
                     <div
+                      aria-hidden="true"
                       class="size-4 sm:size-6 md:hidden"
                     >
                       <svg

@@ -57,7 +57,7 @@ const ContactForm = () => {
     // ✅ This will be type-safe and validated.
     setSending(true);
     toast.promise(sendContact(values), {
-      loading: "Sending...",
+      loading: "Sending…",
       success: () => {
         form.reset();
         setSending(false);
@@ -92,7 +92,12 @@ const ContactForm = () => {
                 <FormItem>
                   <FormLabel>First name</FormLabel>
                   <FormControl>
-                    <Input type="text" placeholder="Joel" {...field} />
+                    <Input
+                      type="text"
+                      placeholder="Joel…"
+                      autoComplete="given-name"
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -105,7 +110,12 @@ const ContactForm = () => {
                 <FormItem>
                   <FormLabel>Last name</FormLabel>
                   <FormControl>
-                    <Input type="text" placeholder="Miller" {...field} />
+                    <Input
+                      type="text"
+                      placeholder="Miller…"
+                      autoComplete="family-name"
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -123,7 +133,12 @@ const ContactForm = () => {
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input placeholder="joel@miller.com" {...field} />
+                    <Input
+                      type="email"
+                      placeholder="joel@miller.com…"
+                      autoComplete="email"
+                      {...field}
+                    />
                   </FormControl>
                   {/* <FormDescription>
                   I need your email to answer to your message.
@@ -144,7 +159,7 @@ const ContactForm = () => {
                 <FormItem>
                   <FormLabel>Message</FormLabel>
                   <FormControl>
-                    <Textarea placeholder="Your message..." {...field} />
+                    <Textarea placeholder="Your message…" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

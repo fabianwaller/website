@@ -51,11 +51,18 @@ export function CommandMenuButton() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.8 }}
     >
-      <Button variant="ghost" className="relative -left-4">
-        <div
-          className="flex items-center font-medium hover:animate-none motion-safe:animate-in"
-          onClick={toggle}
-        >
+      <Button
+        variant="ghost"
+        className="relative -left-4"
+        onClick={toggle}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            toggle();
+          }
+        }}
+      >
+        <div className="flex items-center font-medium hover:animate-none motion-safe:animate-in">
           <span>{action}</span>
           {cmd && hotkey && (
             <>

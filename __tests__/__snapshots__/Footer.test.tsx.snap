@@ -19,11 +19,13 @@ exports[`Footer renders Footer unchanged 1`] = `
             class="flex gap-6 text-xl"
           >
             <a
+              aria-label="Twitter"
               class="h-8 w-8 hover:text-primary"
               href="https://x.com/fabianwallerr"
               target="_blank"
             >
               <svg
+                aria-hidden="true"
                 class="h-full w-full"
                 fill="currentColor"
                 height="1em"
@@ -39,11 +41,13 @@ exports[`Footer renders Footer unchanged 1`] = `
               </svg>
             </a>
             <a
+              aria-label="Github"
               class="h-8 w-8 hover:text-primary"
               href="https://github.com/fabianwaller"
               target="_blank"
             >
               <svg
+                aria-hidden="true"
                 class="h-full w-full"
                 fill="currentColor"
                 height="1em"
@@ -59,11 +63,13 @@ exports[`Footer renders Footer unchanged 1`] = `
               </svg>
             </a>
             <a
+              aria-label="LinkedIn"
               class="h-8 w-8 hover:text-primary"
               href="https://www.linkedin.com/in/fabian-waller-974840213/"
               target="_blank"
             >
               <svg
+                aria-hidden="true"
                 class="h-full w-full"
                 fill="currentColor"
                 height="1em"
@@ -79,11 +85,13 @@ exports[`Footer renders Footer unchanged 1`] = `
               </svg>
             </a>
             <a
+              aria-label="Instagram"
               class="h-8 w-8 hover:text-primary"
               href="https://www.instagram.com/fabianwallerr/"
               target="_blank"
             >
               <svg
+                aria-hidden="true"
                 class="h-full w-full"
                 fill="currentColor"
                 height="1em"
@@ -99,11 +107,13 @@ exports[`Footer renders Footer unchanged 1`] = `
               </svg>
             </a>
             <a
+              aria-label="RSS Feed"
               class="h-8 w-8 hover:text-primary"
               href="/rss"
               target="_blank"
             >
               <svg
+                aria-hidden="true"
                 class="lucide lucide-rss h-full w-full"
                 fill="none"
                 height="24"
@@ -129,11 +139,13 @@ exports[`Footer renders Footer unchanged 1`] = `
               </svg>
             </a>
             <a
+              aria-label="Contact"
               class="h-8 w-8 hover:text-primary"
               href="/contact"
               target="_self"
             >
               <svg
+                aria-hidden="true"
                 class="lucide lucide-mail h-full w-full"
                 fill="none"
                 height="24"

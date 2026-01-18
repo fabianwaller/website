@@ -17,11 +17,11 @@ import { Badge } from "@/components/ui/badge";
 import { Glow, GlowArea } from "@/components/glow";
 import { getAnimationDelay } from "@/components/Section";
 
-const formatDate = (date: Date) => {
-  return (
-    date.getDate() + "." + (date.getMonth() + 1) + "." + date.getFullYear()
-  );
-};
+const dateFormatter = new Intl.DateTimeFormat("de-DE", {
+  day: "numeric",
+  month: "numeric",
+  year: "numeric",
+});
 
 const ProjectCards = ({ data }: { data: any[] }) => {
   return (
@@ -43,12 +43,12 @@ const ProjectCards = ({ data }: { data: any[] }) => {
                   <div className="pt-2 text-sm text-text-light">
                     {repo.type != "closed" ? (
                       <HStack className="mb-0 gap-2 text-sm">
-                        <Github className="h-4 w-4" />
+                        <Github className="h-4 w-4" aria-hidden="true" />
                         <span>GitHub</span>
                       </HStack>
                     ) : (
                       <HStack className="mb-0 gap-2 text-sm">
-                        <Globe className="h-4 w-4" />
+                        <Globe className="h-4 w-4" aria-hidden="true" />
                         <span>Web</span>
                       </HStack>
                     )}
@@ -74,25 +74,29 @@ const ProjectCards = ({ data }: { data: any[] }) => {
                     <HStack className="gap-4 text-sm text-text-light">
                       {repo.type != "closed" && (
                         <HStack className="gap-1">
-                          <Star className="h-4 w-4" />
+                          <Star className="h-4 w-4" aria-hidden="true" />
                           {repo.stargazers_count}
                         </HStack>
                       )}
                       {repo.pushed_at && (
                         <HStack className="gap-1">
-                          <Calendar className="h-4 w-4" />
-                          {formatDate(new Date(repo.pushed_at))}
+                          <Calendar className="h-4 w-4" aria-hidden="true" />
+                          {dateFormatter.format(new Date(repo.pushed_at))}
                         </HStack>
                       )}
                       {repo.fork && (
                         <HStack className="gap-1">
-                          <GitFork className="h-4 w-4" />
+                          <GitFork className="h-4 w-4" aria-hidden="true" />
                         </HStack>
                       )}
                     </HStack>
                     <Link href={repo.html_url} target="_blank">
-                      <Button variant={"ghost"} className="left-2 ml-auto">
-                        <ExternalLink className="h-4 w-4" />
+                      <Button
+                        variant={"ghost"}
+                        className="left-2 ml-auto"
+                        aria-label={`Open ${repo.full_name} in new tab`}
+                      >
+                        <ExternalLink className="h-4 w-4" aria-hidden="true" />
                       </Button>
                     </Link>
                   </HStack>

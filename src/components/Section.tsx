@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "./Container";
 import Subtitle from "./ui/Subtitle";
-import { get } from "http";
 
 type SectionProps = {
   name: string;
