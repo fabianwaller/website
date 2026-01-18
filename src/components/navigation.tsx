@@ -52,19 +52,19 @@ export function Navigation() {
   const pathname = usePathname();
 
   const [hoveredTab, setHoveredTab] = useState<string>(pathname);
-  const clipPathContainerRef = useRef(null);
-  const activeTabElementRef = useRef(null);
+  const clipPathContainerRef = useRef<HTMLDivElement>(null);
+  const activeTabElementRef = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
     const container = clipPathContainerRef.current;
+    if (!container) return;
 
-    if (!hoveredTab || !container) {
-      container.style.clipPath = `inset(0 ${100}% 0 ${100}% round 8px)`;
+    if (!hoveredTab) {
+      container.style.clipPath = `inset(0 100% 0 100% round 8px)`;
       return;
     }
 
     const activeTabElement = activeTabElementRef.current;
-
     if (!activeTabElement) return;
 
     const { offsetLeft, offsetWidth } = activeTabElement;
@@ -78,7 +78,7 @@ export function Navigation() {
     ).toFixed();
 
     container.style.clipPath = `inset(0 ${insetRight}% 0 ${insetLeft}% round 8px)`;
-  }, [hoveredTab, activeTabElementRef, clipPathContainerRef]);
+  }, [hoveredTab]);
 
   const activeClass = "text-primary";
 

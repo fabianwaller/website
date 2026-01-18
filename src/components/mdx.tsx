@@ -1,18 +1,23 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image, { ImageProps } from "next/image";
 import {
   MDXRemote,
   MDXRemoteProps,
   MDXRemoteSerializeResult,
 } from "next-mdx-remote/rsc";
-import React from "react";
+import React, { AnchorHTMLAttributes, ReactNode } from "react";
 import remarkGfm from "remark-gfm";
 import remarkToc from "remark-toc";
 import rehypePrettyCode from "rehype-pretty-code";
 import CopyButton from "./anchorHeading";
 import HStack from "./HStack";
 
-function Table({ data }) {
+interface TableData {
+  headers: string[];
+  rows: string[][];
+}
+
+function Table({ data }: { data: TableData }) {
   let headers = data.headers.map((header, index) => (
     <th key={index}>{header}</th>
   ));
@@ -34,10 +39,10 @@ function Table({ data }) {
   );
 }
 
-function CustomLink(props) {
+function CustomLink(props: AnchorHTMLAttributes<HTMLAnchorElement>) {
   let href = props.href;
 
-  if (href.startsWith("/")) {
+  if (href?.startsWith("/")) {
     return (
       <Link href={href} {...props}>
         {props.children}
@@ -45,34 +50,29 @@ function CustomLink(props) {
     );
   }
 
-  if (href.startsWith("#")) {
+  if (href?.startsWith("#")) {
     return <a {...props} />;
   }
 
   return <a target="_blank" rel="noopener noreferrer" {...props} />;
 }
 
-function RoundedImage(props) {
-  return <Image alt={props.alt} className="rounded-lg" {...props} />;
+function RoundedImage({ className, ...props }: ImageProps) {
+  return <Image className={`rounded-lg ${className ?? ""}`} {...props} />;
 }
 
-// function Code({ children, ...props }) {
-//   return <StyledCode {...props}>{children}</StyledCode>;
-// }
-
-function slugify(str) {
-  return str
-    .toString()
+function slugify(str: ReactNode): string {
+  return String(str ?? "")
     .toLowerCase()
-    .trim() // Remove whitespace from both ends of a string
-    .replace(/\s+/g, "-") // Replace spaces with -
-    .replace(/&/g, "-and-") // Replace & with 'and'
-    .replace(/[^\w\-]+/g, "") // Remove all non-word characters except for -
-    .replace(/\-\-+/g, "-"); // Replace multiple - with single -
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/&/g, "-and-")
+    .replace(/[^\w\-]+/g, "")
+    .replace(/\-\-+/g, "-");
 }
 
 function createHeading(level: number) {
-  const Heading = ({ children }) => {
+  const Heading = ({ children }: { children: ReactNode }) => {
     let slug = slugify(children);
     return React.createElement(
       `h${level}`,
@@ -103,7 +103,7 @@ const components = {
   h4: createHeading(4),
   h5: createHeading(5),
   h6: createHeading(6),
-  p: ({ children }) => (
+  p: ({ children }: { children: ReactNode }) => (
     <p className="hyphens-auto text-justify leading-relaxed">{children}</p>
   ),
   Image: RoundedImage,

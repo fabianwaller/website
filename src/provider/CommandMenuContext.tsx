@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, ReactNode } from "react";
+import { createContext, useContext, useState, ReactNode, useCallback, useMemo } from "react";
 
 interface CommandMenuContextProps {
   open: boolean;
@@ -14,12 +14,14 @@ const CommandMenuContext = createContext<CommandMenuContextProps | undefined>(
 export const CommandMenuProvider = ({ children }: { children: ReactNode }) => {
   const [open, setOpen] = useState(false);
 
-  const toggle = () => {
-    setOpen((open) => !open);
-  };
+  const toggle = useCallback(() => {
+    setOpen((prev) => !prev);
+  }, []);
+
+  const value = useMemo(() => ({ open, toggle }), [open, toggle]);
 
   return (
-    <CommandMenuContext.Provider value={{ open, toggle }}>
+    <CommandMenuContext.Provider value={value}>
       {children}
     </CommandMenuContext.Provider>
   );

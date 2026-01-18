@@ -169,7 +169,7 @@ const config = {
       spacing: {
         "icon-small": "4",
       },
-      typography: ({ theme }) => ({
+      typography: ({ theme }: { theme: (path: string) => string }) => ({
         custom: {
           css: {
             "--tw-prose-body": "hsl(var(--text-color))",

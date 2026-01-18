@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import Container from "./Container";
 import Logo from "@/components/logo";
 import { Navigation } from "@/components/navigation";
@@ -8,20 +8,29 @@ import { cn } from "@/lib/utils";
 
 const Header = () => {
   const [headerScroll, setHeaderScroll] = useState(false);
+  const ticking = useRef(false);
 
   const breakpoint = 1;
 
+  const updateHeaderScroll = useCallback(() => {
+    setHeaderScroll(window.scrollY >= breakpoint);
+    ticking.current = false;
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
-      setHeaderScroll(window.scrollY >= breakpoint);
+      if (!ticking.current) {
+        requestAnimationFrame(updateHeaderScroll);
+        ticking.current = true;
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [updateHeaderScroll]);
 
   return (
     <header

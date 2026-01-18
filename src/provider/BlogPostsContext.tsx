@@ -1,7 +1,7 @@
 "use client";
 
 import { BlogPost } from "@/app/(website)/blog/utils";
-import { createContext, useContext, ReactNode } from "react";
+import { createContext, useContext, ReactNode, useMemo } from "react";
 
 interface BlogPostsContextProps {
   blogPosts: BlogPost[];
@@ -18,8 +18,10 @@ export const BlogPostsProvider = ({
   children: ReactNode;
   blogPosts: BlogPost[];
 }) => {
+  const value = useMemo(() => ({ blogPosts }), [blogPosts]);
+
   return (
-    <BlogPostsContext.Provider value={{ blogPosts }}>
+    <BlogPostsContext.Provider value={value}>
       {children}
     </BlogPostsContext.Provider>
   );

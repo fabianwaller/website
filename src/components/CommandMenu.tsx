@@ -29,7 +29,7 @@ export function CommandMenuButton() {
   const [hotkey, setHotkey] = useState<React.ReactNode>(null);
 
   useEffect(() => {
-    if (!window) return null;
+    if (typeof window === "undefined") return;
     const isMac = /(Mac)/i.test(window.navigator.userAgent);
     const isMobile = /iPhone|iPad|Android/i.test(window.navigator.userAgent);
     if (isMobile) {
