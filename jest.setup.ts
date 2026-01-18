@@ -10,15 +10,26 @@ beforeEach(() => {
   idCounter = 0;
 });
 
-global.IntersectionObserver = class {
-  constructor() {}
+global.IntersectionObserver = class IntersectionObserver {
+  readonly root: Element | Document | null = null;
+  readonly rootMargin: string = "0px";
+  readonly thresholds: ReadonlyArray<number> = [0];
+
+  constructor(
+    _callback: IntersectionObserverCallback,
+    _options?: IntersectionObserverInit
+  ) {}
+
   observe() {
-    return null;
+    return;
   }
   unobserve() {
-    return null;
+    return;
   }
   disconnect() {
-    return null;
+    return;
+  }
+  takeRecords(): IntersectionObserverEntry[] {
+    return [];
   }
 };
