@@ -129,6 +129,7 @@ export function Navigation() {
             "hidden md:block",
             "absolute z-20 w-full overflow-hidden",
             "transition-[clip-path] duration-300 ease-in-out-quad",
+            "pointer-events-none",
           )}
           style={{
             clipPath: "inset(100% 100% 100% 100% round 8px)",
