@@ -52,7 +52,7 @@ exports[`Contact renders contact page unchanged 1`] = `
             >
               <label
                 class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                for="«r0»-form-item"
+                for="_r_0_-form-item"
               >
                 First name
               </label>
@@ -60,10 +60,10 @@ exports[`Contact renders contact page unchanged 1`] = `
                 class="group/input rounded-lg p-[2px] transition duration-300"
               >
                 <input
-                  aria-describedby="«r0»-form-item-description"
+                  aria-describedby="_r_0_-form-item-description"
                   aria-invalid="false"
                   class="dark:placeholder-text-neutral-600 duration-400 transitionplaceholder:text-neutral-400 flex h-10 w-full rounded-md border border-none border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-2 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-input group-hover/input:shadow-none"
-                  id="«r0»-form-item"
+                  id="_r_0_-form-item"
                   name="firstname"
                   placeholder="Joel"
                   type="text"
@@ -76,7 +76,7 @@ exports[`Contact renders contact page unchanged 1`] = `
             >
               <label
                 class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                for="«r1»-form-item"
+                for="_r_1_-form-item"
               >
                 Last name
               </label>
@@ -84,10 +84,10 @@ exports[`Contact renders contact page unchanged 1`] = `
                 class="group/input rounded-lg p-[2px] transition duration-300"
               >
                 <input
-                  aria-describedby="«r1»-form-item-description"
+                  aria-describedby="_r_1_-form-item-description"
                   aria-invalid="false"
                   class="dark:placeholder-text-neutral-600 duration-400 transitionplaceholder:text-neutral-400 flex h-10 w-full rounded-md border border-none border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-2 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-input group-hover/input:shadow-none"
-                  id="«r1»-form-item"
+                  id="_r_1_-form-item"
                   name="lastname"
                   placeholder="Miller"
                   type="text"
@@ -105,7 +105,7 @@ exports[`Contact renders contact page unchanged 1`] = `
             >
               <label
                 class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                for="«r2»-form-item"
+                for="_r_2_-form-item"
               >
                 Email
               </label>
@@ -113,10 +113,10 @@ exports[`Contact renders contact page unchanged 1`] = `
                 class="group/input rounded-lg p-[2px] transition duration-300"
               >
                 <input
-                  aria-describedby="«r2»-form-item-description"
+                  aria-describedby="_r_2_-form-item-description"
                   aria-invalid="false"
                   class="dark:placeholder-text-neutral-600 duration-400 transitionplaceholder:text-neutral-400 flex h-10 w-full rounded-md border border-none border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-2 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-input group-hover/input:shadow-none"
-                  id="«r2»-form-item"
+                  id="_r_2_-form-item"
                   name="email"
                   placeholder="joel@miller.com"
                   value=""
@@ -133,7 +133,7 @@ exports[`Contact renders contact page unchanged 1`] = `
             >
               <label
                 class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                for="«r3»-form-item"
+                for="_r_3_-form-item"
               >
                 Message
               </label>
@@ -141,10 +141,10 @@ exports[`Contact renders contact page unchanged 1`] = `
                 class="group/input rounded-lg p-[2px] transition duration-300"
               >
                 <textarea
-                  aria-describedby="«r3»-form-item-description"
+                  aria-describedby="_r_3_-form-item-description"
                   aria-invalid="false"
                   class="dark:placeholder-text-neutral-600 duration-400 transitionplaceholder:text-neutral-400 flex min-h-[80px] w-full rounded-md border border-none border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-2 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-input group-hover/input:shadow-none"
-                  id="«r3»-form-item"
+                  id="_r_3_-form-item"
                   name="message"
                   placeholder="Your message..."
                 />
