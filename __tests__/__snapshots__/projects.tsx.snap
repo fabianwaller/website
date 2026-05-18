@@ -12,6 +12,12 @@ exports[`Projects renders projects page unchanged 1`] = `
     >
       <div
         class="motion-reduce:animate-appear-reduced h-full rounded-lg motion-safe:animate-appear after:inset-0.25 pointer-events-none absolute inset-0 mix-blend-soft-light after:absolute after:rounded-[inherit] after:bg-background/90 after:content-['']"
+        style="background-image: radial-gradient(
+              var(--glow-size) var(--glow-size) at calc(var(--glow-x, -99999px) - var(--glow-left, 0px))
+              calc(var(--glow-y, -99999px) - var(--glow-top, 0px)),
+              hsl(var(--foreground)) 0%,
+              transparent 100%
+            );"
       />
       <div
         class="shadow-custom-soft grid gap-4 overflow-hidden rounded-lg bg-card px-6 py-4 h-full"
