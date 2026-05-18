@@ -58,6 +58,11 @@ exports[`Contact renders contact page unchanged 1`] = `
               </label>
               <div
                 class="group/input rounded-lg p-[2px] transition duration-300"
+                style="background: radial-gradient(
+          0px circle at 0px 0px,
+             hsl(var(--primary)),
+          transparent 80%
+        );"
               >
                 <input
                   aria-describedby="«r0»-form-item-description"
@@ -82,6 +87,11 @@ exports[`Contact renders contact page unchanged 1`] = `
               </label>
               <div
                 class="group/input rounded-lg p-[2px] transition duration-300"
+                style="background: radial-gradient(
+          0px circle at 0px 0px,
+             hsl(var(--primary)),
+          transparent 80%
+        );"
               >
                 <input
                   aria-describedby="«r1»-form-item-description"
@@ -111,6 +121,11 @@ exports[`Contact renders contact page unchanged 1`] = `
               </label>
               <div
                 class="group/input rounded-lg p-[2px] transition duration-300"
+                style="background: radial-gradient(
+          0px circle at 0px 0px,
+             hsl(var(--primary)),
+          transparent 80%
+        );"
               >
                 <input
                   aria-describedby="«r2»-form-item-description"
@@ -139,6 +154,11 @@ exports[`Contact renders contact page unchanged 1`] = `
               </label>
               <div
                 class="group/input rounded-lg p-[2px] transition duration-300"
+                style="background: radial-gradient(
+          0px circle at 0px 0px,
+             hsl(var(--primary)),
+          transparent 80%
+        );"
               >
                 <textarea
                   aria-describedby="«r3»-form-item-description"
