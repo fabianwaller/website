@@ -12,7 +12,7 @@ import {
   CommandSeparator,
 } from "@/components/ui/command";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
 import { useCommandMenu } from "@/provider/CommandMenuContext";
@@ -20,6 +20,7 @@ import { navigationItems } from "@/components/navigation";
 import { useBlogPosts } from "@/provider/BlogPostsContext";
 import { motion } from "framer-motion";
 import { socialItems } from "@/socialItems";
+import { DocumentSearchIndex, searchFields } from "@/lib/search";
 
 export function CommandMenuButton() {
   const { toggle } = useCommandMenu();
@@ -85,6 +86,27 @@ export function CommandMenu() {
   const { open, toggle } = useCommandMenu();
 
   const { blogPosts } = useBlogPosts();
+  const [search, setSearch] = useState("");
+
+  const blogSearchIndex = useMemo(
+    () =>
+      new DocumentSearchIndex(blogPosts, {
+        getText: searchFields(
+          (post) => post.metadata.title,
+          (post) => post.metadata.summary,
+          (post) => post.content,
+        ),
+      }),
+    [blogPosts],
+  );
+
+  const rankedBlogPosts = useMemo(() => {
+    const trimmedSearch = search.trim();
+    if (!trimmedSearch) return blogPosts;
+
+    const results = blogSearchIndex.search(trimmedSearch, blogPosts.length);
+    return results.map((result) => result.document);
+  }, [blogPosts, blogSearchIndex, search]);
 
   const handleSelect = (path: string, external: boolean | undefined) => {
     toggle();
@@ -110,7 +132,11 @@ export function CommandMenu() {
   return (
     <div className="space-y-4">
       <CommandDialog open={open} onOpenChange={toggle}>
-        <CommandInput placeholder="Type a command or search..." />
+        <CommandInput
+          placeholder="Type a command or search..."
+          value={search}
+          onValueChange={setSearch}
+        />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
           <CommandGroup heading="External">
@@ -138,9 +164,10 @@ export function CommandMenu() {
           </CommandGroup>
           <CommandSeparator />
           <CommandGroup heading="Blog">
-            {blogPosts.map((post) => (
+            {rankedBlogPosts.map((post) => (
               <CommandItem
                 key={post.slug}
+                value={`${post.metadata.title} ${blogSearchIndex.searchableText(post)}`}
                 onSelect={() => handleSelect(`/blog/${post.slug}`, false)}
               >
                 <span>{post.metadata.title}</span>
