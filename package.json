@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "search:index": "ts-node --transpile-only --project tsconfig.scripts.json scripts/build-blog-search-index.ts",
+    "predev": "npm run search:index",
     "dev": "next dev",
+    "prebuild": "npm run search:index",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -19,6 +22,7 @@
     "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
+    "@fabianwaller/document-search": "^0.1.0",
     "@hookform/resolvers": "^4.1.3",
     "@mdx-js/loader": "^3.1.0",
     "@next/mdx": "^15.2.3",

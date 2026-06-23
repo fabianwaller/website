@@ -17,10 +17,13 @@ import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
 import { useCommandMenu } from "@/provider/CommandMenuContext";
 import { navigationItems } from "@/components/navigation";
-import { useBlogPosts } from "@/provider/BlogPostsContext";
 import { motion } from "framer-motion";
 import { socialItems } from "@/socialItems";
-import { DocumentSearchIndex, searchFields } from "@/lib/search";
+import type { BlogSearchData } from "@/lib/blog-search";
+import { loadIndex } from "@fabianwaller/document-search";
+import { englishAnalyzer } from "@fabianwaller/document-search/english";
+
+const blogSearchAnalyzer = englishAnalyzer();
 
 export function CommandMenuButton() {
   const { toggle } = useCommandMenu();
@@ -80,33 +83,29 @@ export function CommandMenuButton() {
   );
 }
 
-export function CommandMenu() {
+export function CommandMenu({ searchData }: { searchData: BlogSearchData }) {
   const router = useRouter();
 
   const { open, toggle } = useCommandMenu();
 
-  const { blogPosts } = useBlogPosts();
   const [search, setSearch] = useState("");
+  const trimmedSearch = search.trim();
 
   const blogSearchIndex = useMemo(
-    () =>
-      new DocumentSearchIndex(blogPosts, {
-        getText: searchFields(
-          (post) => post.metadata.title,
-          (post) => post.metadata.summary,
-          (post) => post.content,
-        ),
-      }),
-    [blogPosts],
+    () => loadIndex(searchData, { analyzer: blogSearchAnalyzer }),
+    [searchData],
   );
 
   const rankedBlogPosts = useMemo(() => {
-    const trimmedSearch = search.trim();
-    if (!trimmedSearch) return blogPosts;
+    if (!trimmedSearch) return blogSearchIndex.documents;
 
-    const results = blogSearchIndex.search(trimmedSearch, blogPosts.length);
-    return results.map((result) => result.document);
-  }, [blogPosts, blogSearchIndex, search]);
+    return blogSearchIndex
+      .search({
+        text: trimmedSearch,
+        limit: blogSearchIndex.documents.length,
+      })
+      .map((result) => result.document);
+  }, [blogSearchIndex, trimmedSearch]);
 
   const handleSelect = (path: string, external: boolean | undefined) => {
     toggle();
@@ -131,7 +130,7 @@ export function CommandMenu() {
 
   return (
     <div className="space-y-4">
-      <CommandDialog open={open} onOpenChange={toggle}>
+      <CommandDialog open={open} onOpenChange={toggle} shouldFilter={false}>
         <CommandInput
           placeholder="Type a command or search..."
           value={search}
@@ -139,38 +138,42 @@ export function CommandMenu() {
         />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
-          <CommandGroup heading="External">
-            {socialItems.map((item) => (
-              <CommandItem
-                key={item.href}
-                onSelect={() => handleSelect(item.href, item.blank)}
-              >
-                {item.icon}
-                <span>{item.titleShort ?? item.title}</span>
-              </CommandItem>
-            ))}
-          </CommandGroup>
-          <CommandSeparator />
-          <CommandGroup heading="Links">
-            {navigationItems.map((item) => (
-              <CommandItem
-                key={item.href}
-                onSelect={() => handleSelect(item.href, false)}
-              >
-                {item.icon}
-                <span>{item.title}</span>
-              </CommandItem>
-            ))}
-          </CommandGroup>
-          <CommandSeparator />
+          {!trimmedSearch && (
+            <>
+              <CommandGroup heading="External">
+                {socialItems.map((item) => (
+                  <CommandItem
+                    key={item.href}
+                    onSelect={() => handleSelect(item.href, item.blank)}
+                  >
+                    {item.icon}
+                    <span>{item.titleShort ?? item.title}</span>
+                  </CommandItem>
+                ))}
+              </CommandGroup>
+              <CommandSeparator />
+              <CommandGroup heading="Links">
+                {navigationItems.map((item) => (
+                  <CommandItem
+                    key={item.href}
+                    onSelect={() => handleSelect(item.href, false)}
+                  >
+                    {item.icon}
+                    <span>{item.title}</span>
+                  </CommandItem>
+                ))}
+              </CommandGroup>
+              <CommandSeparator />
+            </>
+          )}
           <CommandGroup heading="Blog">
             {rankedBlogPosts.map((post) => (
               <CommandItem
                 key={post.slug}
-                value={`${post.metadata.title} ${blogSearchIndex.searchableText(post)}`}
+                value={post.title}
                 onSelect={() => handleSelect(`/blog/${post.slug}`, false)}
               >
-                <span>{post.metadata.title}</span>
+                <span>{post.title}</span>
               </CommandItem>
             ))}
           </CommandGroup>

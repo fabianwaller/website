@@ -43,7 +43,7 @@ exports[`Blog renders blog page unchanged 1`] = `
         class="flex flex-col items-center justify-center gap-4"
       >
         <p
-          class="motion-reduce:animate-appear-reduced leading-relaxed motion-safe:animate-appear"
+          class="leading-relaxed motion-safe:animate-appear motion-reduce:animate-appear-reduced"
           style="animation-delay: 0.12s;"
         >
           Here you'll find all my public thoughts, notes, learnings and experiences. I share whatever I want, ranging from programming to math, over books and podcasts and much more. Scroll down to check them out!
@@ -52,7 +52,7 @@ exports[`Blog renders blog page unchanged 1`] = `
           class="flex flex-col items-center justify-center gap-4"
         >
           <a
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
             href="/blog/slug1"
             style="animation-delay: 0.18s;"
           >
@@ -87,7 +87,7 @@ exports[`Blog renders blog page unchanged 1`] = `
             </div>
           </a>
           <a
-            class="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
+            class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
             href="/blog/slug2"
             style="animation-delay: 0.24s;"
           >

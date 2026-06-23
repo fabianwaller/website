@@ -62,8 +62,7 @@ const sortByDate = (a: BlogPost, b: BlogPost) => {
   return 1;
 };
 
-export async function getBlogPosts(): Promise<BlogPost[]> {
-  "use server"
+export function getBlogPosts(): BlogPost[] {
   return getMDXData(path.join(process.cwd(), "posts")).sort(sortByDate);
 }
 
