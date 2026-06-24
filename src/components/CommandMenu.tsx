@@ -166,17 +166,19 @@ export function CommandMenu({ searchData }: { searchData: BlogSearchData }) {
               <CommandSeparator />
             </>
           )}
-          <CommandGroup heading="Blog">
+          {rankedBlogPosts.length > 0 && (
+            <CommandGroup heading="Blog">
             {rankedBlogPosts.map((post) => (
               <CommandItem
-                key={post.slug}
-                value={post.title}
-                onSelect={() => handleSelect(`/blog/${post.slug}`, false)}
+              key={post.slug}
+              value={post.title}
+              onSelect={() => handleSelect(`/blog/${post.slug}`, false)}
               >
                 <span>{post.title}</span>
               </CommandItem>
             ))}
           </CommandGroup>
+          )}
         </CommandList>
       </CommandDialog>
     </div>
