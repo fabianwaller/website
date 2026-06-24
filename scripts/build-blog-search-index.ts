@@ -29,7 +29,7 @@ const searchData = buildSerializedIndex(blogPosts, {
     {
       name: "content",
       value: (post) => post.content,
-      expandSynonyms: false,
+      expandSynonyms: true,
     },
   ),
   analyzer: englishAnalyzer(),
@@ -38,9 +38,6 @@ const searchData = buildSerializedIndex(blogPosts, {
     slug: post.slug,
     title: post.metadata.title,
   }),
-  typoTolerance: {
-    maxEditDistance: 5,
-  },
 });
 const serialized = `${JSON.stringify(searchData)}\n`;
 
