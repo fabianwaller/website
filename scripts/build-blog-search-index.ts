@@ -38,6 +38,9 @@ const searchData = buildSerializedIndex(blogPosts, {
     slug: post.slug,
     title: post.metadata.title,
   }),
+  typoTolerance: {
+    maxEditDistance: 5,
+  },
 });
 const serialized = `${JSON.stringify(searchData)}\n`;
 
