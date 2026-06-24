@@ -9,7 +9,7 @@
     "prebuild": "npm run search:index",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "prepare": "husky",
     "test": "jest",
     "test:coverage": "jest --coverage --collectCoverageFrom='src/**/*.{ts,tsx}'",
