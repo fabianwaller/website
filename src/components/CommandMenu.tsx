@@ -19,11 +19,11 @@ import { useCommandMenu } from "@/provider/CommandMenuContext";
 import { navigationItems } from "@/components/navigation";
 import { motion } from "framer-motion";
 import { socialItems } from "@/socialItems";
-import type { BlogSearchData } from "@/lib/blog-search";
-import { loadIndex } from "@fabianwaller/document-search";
-import { englishAnalyzer } from "@fabianwaller/document-search/english";
-
-const blogSearchAnalyzer = englishAnalyzer();
+import type { CommandSearchData } from "@/lib/command-search";
+import {
+  loadCommandSearchIndex,
+  searchCommandDocuments,
+} from "@/lib/command-search";
 
 export function CommandMenuButton(
   props: React.ButtonHTMLAttributes<HTMLButtonElement>,
@@ -85,7 +85,7 @@ export function CommandMenuButton(
   );
 }
 
-export function CommandMenu({ searchData }: { searchData: BlogSearchData }) {
+export function CommandMenu({ searchData }: { searchData: CommandSearchData }) {
   const router = useRouter();
 
   const { open, toggle } = useCommandMenu();
@@ -93,21 +93,21 @@ export function CommandMenu({ searchData }: { searchData: BlogSearchData }) {
   const [search, setSearch] = useState("");
   const trimmedSearch = search.trim();
 
-  const blogSearchIndex = useMemo(
-    () => loadIndex(searchData, { analyzer: blogSearchAnalyzer }),
+  const commandSearchIndex = useMemo(
+    () => loadCommandSearchIndex(searchData),
     [searchData],
   );
 
-  const rankedBlogPosts = useMemo(() => {
-    if (!trimmedSearch) return blogSearchIndex.documents;
-
-    return blogSearchIndex
-      .search({
-        text: trimmedSearch,
-        limit: blogSearchIndex.documents.length,
-      })
-      .map((result) => result.document);
-  }, [blogSearchIndex, trimmedSearch]);
+  const rankedDocuments = useMemo(
+    () => searchCommandDocuments(commandSearchIndex, trimmedSearch),
+    [commandSearchIndex, trimmedSearch],
+  );
+  const rankedBlogPosts = rankedDocuments.filter(
+    (document) => document.type === "blog",
+  );
+  const rankedProjects = rankedDocuments.filter(
+    (document) => document.type === "project",
+  );
 
   const handleSelect = (path: string, external: boolean | undefined) => {
     toggle();
@@ -142,7 +142,7 @@ export function CommandMenu({ searchData }: { searchData: BlogSearchData }) {
           <CommandEmpty>No results found.</CommandEmpty>
           {!trimmedSearch && (
             <>
-               <CommandGroup heading="Links">
+              <CommandGroup heading="Links">
                 {navigationItems.map((item) => (
                   <CommandItem
                     key={item.href}
@@ -154,7 +154,7 @@ export function CommandMenu({ searchData }: { searchData: BlogSearchData }) {
                 ))}
               </CommandGroup>
               <CommandSeparator />
-               <CommandGroup heading="External">
+              <CommandGroup heading="External">
                 {socialItems.map((item) => (
                   <CommandItem
                     key={item.href}
@@ -170,16 +170,34 @@ export function CommandMenu({ searchData }: { searchData: BlogSearchData }) {
           )}
           {rankedBlogPosts.length > 0 && (
             <CommandGroup heading="Blog">
-            {rankedBlogPosts.map((post) => (
-              <CommandItem
-              key={post.slug}
-              value={post.title}
-              onSelect={() => handleSelect(`/blog/${post.slug}`, false)}
-              >
-                <span>{post.title}</span>
-              </CommandItem>
-            ))}
-          </CommandGroup>
+              {rankedBlogPosts.map((post) => (
+                <CommandItem
+                  key={post.href}
+                  value={post.title}
+                  onSelect={() => handleSelect(post.href, post.external)}
+                >
+                  <span>{post.title}</span>
+                </CommandItem>
+              ))}
+            </CommandGroup>
+          )}
+          {rankedProjects.length > 0 && (
+            <>
+              <CommandGroup heading="Projects">
+                {rankedProjects.map((project) => (
+                  <CommandItem
+                    key={project.href}
+                    value={project.title}
+                    onSelect={() =>
+                      handleSelect(project.href, project.external)
+                    }
+                  >
+                    <span>{project.title}</span>
+                  </CommandItem>
+                ))}
+              </CommandGroup>
+              <CommandSeparator />
+            </>
           )}
         </CommandList>
       </CommandDialog>

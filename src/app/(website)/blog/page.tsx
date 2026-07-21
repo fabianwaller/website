@@ -27,7 +27,7 @@ const Blog: React.FC = () => {
           math, over books and podcasts and much more. Scroll down to check them
           out!
         </p> */}
-        <BlogPosts />
+        <BlogPosts posts={posts} />
       </VStack>
     </Section>
   );

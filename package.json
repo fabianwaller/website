@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "search:index": "ts-node --transpile-only --project tsconfig.scripts.json scripts/build-blog-search-index.ts",
+    "search:index": "ts-node --transpile-only --project tsconfig.scripts.json scripts/build-command-search-index.ts",
     "predev": "npm run search:index",
     "dev": "next dev",
     "prebuild": "npm run search:index",

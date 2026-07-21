@@ -5,7 +5,7 @@ import { CommandMenu } from "@/components/CommandMenu";
 import Footer from "@/components/Footer";
 // import { unstable_ViewTransition as ViewTransition } from "react";
 import { Toaster } from "@/components/ui/sonner";
-import { blogSearchData } from "@/lib/blog-search.server";
+import { commandSearchData } from "@/lib/command-search.server";
 
 export const dynamic = "force-static";
 
@@ -16,7 +16,7 @@ export default function WebsiteLayout({
 }) {
   return (
     <CommandMenuProvider>
-      <CommandMenu searchData={blogSearchData} />
+      <CommandMenu searchData={commandSearchData} />
       <Header />
       {/* <ViewTransition name="page"> */}
       <main className="flex flex-col items-center justify-between pt-header">
