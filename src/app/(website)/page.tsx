@@ -8,21 +8,18 @@ import { CommandMenuButton } from "@/components/CommandMenu";
 export default function Home() {
   return (
     <section className="w-full overflow-hidden" id="home">
-      <Container
-        fullScreen
-        className="flex flex-col justify-center py-16 sm:py-24"
-      >
+      <Container className="flex h-auto flex-col justify-center py-16 md:py-24">
         <div className="max-w-4xl">
           <div className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-text-light motion-safe:animate-appear motion-reduce:animate-appear-reduced">
             <MapPin aria-hidden="true" className="size-4" />
             <span>Saarbrücken, Germany</span>
           </div>
-          <h1 className="text-5xl font-semibold leading-none text-title-normal motion-safe:animate-appear motion-reduce:animate-appear-reduced md:text-6xl lg:text-7xl">
+          <h1 className="text-4xl font-semibold leading-none text-title-normal motion-safe:animate-appear motion-reduce:animate-appear-reduced md:text-5xl md:text-6xl lg:text-7xl">
             I build digital products
             <br />
             that feel intuitive and are easy to use.
           </h1>
-          <p className="mt-8 max-w-2xl text-base leading-7 text-text-normal motion-safe:animate-appear motion-reduce:animate-appear-reduced sm:text-lg sm:leading-8">
+          <p className="mt-8 max-w-2xl text-sm leading-7 text-text-normal motion-safe:animate-appear motion-reduce:animate-appear-reduced sm:text-lg sm:leading-8 md:text-base">
             <span>Today I work as a UX Software Engineering Intern at </span>
             <Link
               className="font-medium text-title-normal underline underline-offset-2 transition-colors hover:text-primary"
