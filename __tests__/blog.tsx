@@ -1,6 +1,5 @@
 import Blog from "@/app/(website)/blog/page";
-import { BlogPost } from "@/app/(website)/blog/utils";
-import { BlogPostsProvider } from "@/provider/BlogPostsContext";
+import type { BlogPost } from "@/app/(website)/blog/utils";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
@@ -27,13 +26,13 @@ const blogPostsMock: BlogPost[] = [
   },
 ];
 
+jest.mock("@/app/(website)/blog/utils", () => ({
+  getBlogPosts: () => blogPostsMock,
+}));
+
 describe("Blog", () => {
   it("renders blog page unchanged", () => {
-    const component = render(
-      <BlogPostsProvider blogPosts={blogPostsMock}>
-        <Blog />
-      </BlogPostsProvider>,
-    );
+    const component = render(<Blog />);
     expect(component.asFragment()).toMatchSnapshot();
   });
 });

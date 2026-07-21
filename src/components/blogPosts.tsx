@@ -4,24 +4,28 @@ import Link from "next/link";
 import VStack from "./VStack";
 import { useState } from "react";
 import { Card, CardHoverEffect } from "./card-hover-effect";
-import { useBlogPosts } from "@/provider/BlogPostsContext";
 import { CardContent, CardDescription } from "./ui/card";
 import { format } from "date-fns";
 import { de } from "date-fns/locale";
 import { getAnimationDelay } from "./Section";
 
-const BlogPosts = () => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+export type BlogPostSummary = {
+  readonly slug: string;
+  readonly title: string;
+  readonly summary: string;
+  readonly publishedAt: string;
+};
 
-  const { blogPosts } = useBlogPosts();
+const BlogPosts = ({ posts }: { posts: readonly BlogPostSummary[] }) => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <VStack>
-      {blogPosts.map((post, index) => (
+      {posts.map((post, index) => (
         <Link
           href={`/blog/${post.slug}`}
           key={post.slug}
-          className="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
+          className="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
           style={{ animationDelay: getAnimationDelay(3 + index) }}
         >
           <div
@@ -33,15 +37,17 @@ const BlogPosts = () => {
               active={hoveredIndex === index}
               className="-left-4 w-full-plus"
             />
-            <Card>
+            <Card className="px-5 py-4">
               <CardContent>
-                <div className="flex items-center justify-between gap-4">
-                  <div>
-                    <h3>{post.metadata.title}</h3>
-                    <CardDescription>{post.metadata.summary}</CardDescription>
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+                  <div className="max-w-xl">
+                    <h3 className="mb-1 text-xl font-semibold leading-snug text-title-normal">
+                      {post.title}
+                    </h3>
+                    <CardDescription>{post.summary}</CardDescription>
                   </div>
-                  <span>
-                    {format(post.metadata.publishedAt, "dd.MM.yyyy", {
+                  <span className="text-sm font-medium text-text-light">
+                    {format(post.publishedAt, "dd.MM.yyyy", {
                       locale: de,
                     })}
                   </span>

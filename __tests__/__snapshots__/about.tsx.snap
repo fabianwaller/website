@@ -3,20 +3,22 @@
 exports[`About renders about page unchanged 1`] = `
 <DocumentFragment>
   <section
-    class="w-full py-8"
+    class="w-full py-12 sm:py-16 min-h-[calc(100vh-var(--header-height)-15.25rem)] lg:min-h-[calc(100vh-var(--header-height)-12rem)]"
     id="about"
   >
     <div
-      class="container relative ml-auto mr-auto w-screen max-w-custom px-8 md:px-0 mb-12"
+      class="container relative ml-auto mr-auto w-screen max-w-custom px-8 md:px-0 mb-10 sm:mb-12"
     >
       <div
-        class="text-center"
+        class="flex flex-col gap-3 items-center text-center"
       >
         <div
           class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
           style="animation-delay: 0s;"
         >
-          <h2>
+          <h2
+            class="mb-0 max-w-3xl text-4xl font-semibold leading-tight text-title-normal sm:text-5xl"
+          >
             About me
           </h2>
         </div>
@@ -25,7 +27,7 @@ exports[`About renders about page unchanged 1`] = `
           style="animation-delay: 0.06s;"
         >
           <span
-            class="block text-sm"
+            class="block text-sm font-medium uppercase text-text-light"
           >
             What I'm Doing Now
           </span>
@@ -276,30 +278,28 @@ exports[`About renders about page unchanged 1`] = `
     </div>
   </section>
   <section
-    class="w-full py-8"
+    class="w-full py-12 sm:py-16"
     id="career"
   >
     <div
-      class="container relative ml-auto mr-auto w-screen max-w-custom px-8 md:px-0 mb-12"
+      class="container relative ml-auto mr-auto w-screen max-w-custom px-8 md:px-0 mb-10 sm:mb-12"
     >
       <div
-        class="text-left"
+        class="flex flex-col gap-3 items-start text-left"
       >
         <div
           class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
           style="animation-delay: 0.39749999999999996s;"
         >
-          <h3>
+          <h3
+            class="mb-0 max-w-2xl text-2xl font-semibold leading-tight text-title-normal sm:text-3xl"
+          >
             Career
           </h3>
         </div>
         <div
           class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
           style="animation-delay: 0.45749999999999996s;"
-        />
-        <div
-          class="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
-          style="animation-delay: 0.5175s;"
         />
       </div>
     </div>

@@ -6,9 +6,9 @@ exports[`Logo renders Logo unchanged 1`] = `
     href="/"
   >
     <span
-      class="text-md font-semibold tracking-wide text-title-normal underline-offset-4 hover:text-primary-foreground hover:underline"
+      class="text-sm font-semibold tracking-normal text-title-normal"
     >
-      Fabian
+      Fabian Waller
     </span>
   </a>
 </DocumentFragment>
@@ -20,9 +20,9 @@ exports[`Logo renders white Logo unchanged 1`] = `
     href="/"
   >
     <span
-      class="text-md font-semibold tracking-wide text-title-normal underline-offset-4 hover:text-primary-foreground hover:underline"
+      class="text-sm font-semibold tracking-normal text-title-normal"
     >
-      Fabian
+      Fabian Waller
     </span>
   </a>
 </DocumentFragment>
