@@ -1,8 +1,16 @@
 import BlogPosts from "@/components/blogPosts";
 import Section, { getAnimationDelay } from "@/components/Section";
 import VStack from "@/components/VStack";
+import { getBlogPosts } from "./utils";
 
 const Blog: React.FC = () => {
+  const posts = getBlogPosts().map((post) => ({
+    slug: post.slug,
+    title: post.metadata.title,
+    summary: post.metadata.summary,
+    publishedAt: post.metadata.publishedAt,
+  }));
+
   return (
     <Section
       name="blog"
@@ -19,7 +27,7 @@ const Blog: React.FC = () => {
           math, over books and podcasts and much more. Scroll down to check them
           out!
         </p> */}
-        <BlogPosts />
+        <BlogPosts posts={posts} />
       </VStack>
     </Section>
   );

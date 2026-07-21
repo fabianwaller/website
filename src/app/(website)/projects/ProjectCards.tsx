@@ -16,7 +16,7 @@ import { FaGithub as Github } from "react-icons/fa6";
 import { Badge } from "@/components/ui/badge";
 import { Glow, GlowArea } from "@/components/glow";
 import { getAnimationDelay } from "@/components/Section";
-import type { Project } from "./utils";
+import type { Project } from "@/lib/projects";
 
 const formatDate = (date: Date) => {
   return (
