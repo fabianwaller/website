@@ -21,8 +21,8 @@ const BlogPosts = () => {
         <Link
           href={`/blog/${post.slug}`}
           key={post.slug}
-          className="motion-reduce:animate-appear-reduced motion-safe:animate-appear"
-          style={{ animationDelay: getAnimationDelay(3 + index) }}
+          className="motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+          style={{ animationDelay: getAnimationDelay(2 + index) }}
         >
           <div
             className="relative block h-full w-full"
@@ -33,11 +33,11 @@ const BlogPosts = () => {
               active={hoveredIndex === index}
               className="-left-4 w-full-plus"
             />
-            <Card>
+            <Card className="px-4 py-3">
               <CardContent>
                 <div className="flex items-center justify-between gap-4">
                   <div>
-                    <h3>{post.metadata.title}</h3>
+                    <h3 className="text-xl font-bold">{post.metadata.title}</h3>
                     <CardDescription>{post.metadata.summary}</CardDescription>
                   </div>
                   <span>

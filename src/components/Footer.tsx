@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
               ))}
             </div>
 
-            <span className="text-left text-sm text-text-light">
+            <span className="text-left text-sm text-text-light opacity-65">
               &#169; Fabian Waller. All rights reserved.
             </span>
           </div>

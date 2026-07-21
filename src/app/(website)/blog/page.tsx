@@ -10,7 +10,7 @@ const Blog: React.FC = () => {
       subtitle="insight in my thoughts"
     >
       <VStack>
-        <p
+        {/* <p
           className="motion-reduce:animate-appear-reduced leading-relaxed motion-safe:animate-appear"
           style={{ animationDelay: getAnimationDelay(2) }}
         >
@@ -18,7 +18,7 @@ const Blog: React.FC = () => {
           experiences. I share whatever I want, ranging from programming to
           math, over books and podcasts and much more. Scroll down to check them
           out!
-        </p>
+        </p> */}
         <BlogPosts />
       </VStack>
     </Section>
