@@ -1,30 +1,33 @@
-import { ArrowRight, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import Link from "next/link";
 
 import Container from "@/components/Container";
-import { Button } from "@/components/ui/button";
 import { Suspense } from "react";
 import { CommandMenuButton } from "@/components/CommandMenu";
 
 export default function Home() {
   return (
-    <section className="w-full" id="home">
-      <Container className="flex min-h-[calc(100svh-var(--header-height))] flex-col justify-center pb-20 pt-16 sm:pb-24 sm:pt-24">
-        <div className="max-w-[42rem]">
-          <div className="mb-8 flex items-center gap-2 text-sm text-text-light motion-safe:animate-appear motion-reduce:animate-appear-reduced">
+    <section className="w-full overflow-hidden" id="home">
+      <Container
+        fullScreen
+        className="flex flex-col justify-center py-16 sm:py-24"
+      >
+        <div className="max-w-4xl">
+          <div className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-text-light motion-safe:animate-appear motion-reduce:animate-appear-reduced">
             <MapPin aria-hidden="true" className="size-4" />
             <span>Saarbrücken, Germany</span>
           </div>
 
-          <h1 className="text-[clamp(3rem,10vw,5rem)] font-semibold tracking-tight motion-safe:animate-appear motion-reduce:animate-appear-reduced">
-            I build human-centered digital products that feel intuitive, and
-            easy to use.
+          <h1 className="text-5xl font-semibold leading-none text-title-normal motion-safe:animate-appear motion-reduce:animate-appear-reduced md:text-6xl lg:text-7xl">
+            I build digital products
+            <br />
+            that feel intuitive and easy to use.
           </h1>
 
-          <p className="mt-8 max-w-[39rem] text-lg leading-[1.75] text-text-light motion-safe:animate-appear motion-reduce:animate-appear-reduced sm:text-xl">
-            Today I work as UX Software Engineering Intern at{" "}
+          <p className="mt-8 max-w-2xl text-base leading-7 text-text-normal motion-safe:animate-appear motion-reduce:animate-appear-reduced sm:text-lg sm:leading-8">
+            <span>Today I work as UX Software Engineering Intern at</span>
             <Link
-              className="font-medium text-title-normal underline underline-offset-2 transition-colors hover:text-primary"
+              className="ml-1 font-medium text-title-normal underline underline-offset-2 transition-colors hover:text-primary"
               href="https://ergosign.de/de/"
               target="_blank"
               rel="noreferrer"
@@ -35,19 +38,10 @@ export default function Home() {
             deeply about how it looks, feels and behaves.
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center gap-3 motion-safe:animate-appear motion-reduce:animate-appear-reduced">
+          <div className="mt-8 flex flex-wrap items-center gap-4 motion-safe:animate-appear motion-reduce:animate-appear-reduced">
             <Suspense>
-              <CommandMenuButton className="relative -left-6" />
+              <CommandMenuButton className="px-0 text-text-light" />
             </Suspense>
-            {/* <Button asChild size="lg" variant="secondary">
-              <Link href="/projects">
-                See my work
-                <ArrowRight aria-hidden="true" className="size-4" />
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="ghost">
-              <Link href="/contact">Start a conversation</Link>
-            </Button> */}
           </div>
         </div>
       </Container>

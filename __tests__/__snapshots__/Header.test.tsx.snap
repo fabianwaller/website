@@ -16,7 +16,7 @@ exports[`Header renders Header unchanged 1`] = `
           href="/"
         >
           <span
-            class="text-md font-semibold tracking-normal text-title-normal"
+            class="text-sm font-semibold tracking-normal text-title-normal"
           >
             Fabian Waller
           </span>
@@ -40,7 +40,7 @@ exports[`Header renders Header unchanged 1`] = `
                 class="m-0 flex flex-col items-center bg-transparent"
               >
                 <a
-                  class="text-md group w-max items-center justify-center rounded-md px-4 py-2 font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent"
+                  class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent"
                   data-radix-collection-item=""
                   href="/"
                   tabindex="-1"
@@ -76,7 +76,7 @@ exports[`Header renders Header unchanged 1`] = `
                 class="m-0 flex flex-col items-center bg-transparent"
               >
                 <a
-                  class="text-md group w-max items-center justify-center rounded-md px-4 py-2 font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent"
+                  class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent"
                   data-radix-collection-item=""
                   href="/projects"
                   tabindex="-1"
@@ -118,7 +118,7 @@ exports[`Header renders Header unchanged 1`] = `
                 class="m-0 flex flex-col items-center bg-transparent"
               >
                 <a
-                  class="text-md group w-max items-center justify-center rounded-md px-4 py-2 font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent"
+                  class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent"
                   data-radix-collection-item=""
                   href="/blog"
                   tabindex="-1"
@@ -156,7 +156,7 @@ exports[`Header renders Header unchanged 1`] = `
                       />
                     </svg>
                   </div>
-                  Writing
+                  Blog
                 </a>
               </li>
             </ul>
@@ -178,7 +178,7 @@ exports[`Header renders Header unchanged 1`] = `
                   class="relative m-0 flex flex-col items-center bg-transparent"
                 >
                   <a
-                    class="text-md group w-max items-center justify-center rounded-md px-4 py-2 font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent text-primary-foreground underline-offset-4 underline"
+                    class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent text-primary-foreground underline-offset-2 underline"
                     data-radix-collection-item=""
                     href="/"
                   >
@@ -213,7 +213,7 @@ exports[`Header renders Header unchanged 1`] = `
                   class="relative m-0 flex flex-col items-center bg-transparent"
                 >
                   <a
-                    class="text-md group w-max items-center justify-center rounded-md px-4 py-2 font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent text-primary-foreground underline-offset-4 underline"
+                    class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent text-primary-foreground underline-offset-2 underline"
                     data-radix-collection-item=""
                     href="/projects"
                   >
@@ -254,7 +254,7 @@ exports[`Header renders Header unchanged 1`] = `
                   class="relative m-0 flex flex-col items-center bg-transparent"
                 >
                   <a
-                    class="text-md group w-max items-center justify-center rounded-md px-4 py-2 font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent text-primary-foreground underline-offset-4 underline"
+                    class="group w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors focus:bg-transparent focus:outline-none disabled:pointer-events-none disabled:opacity-50 flex h-fit flex-col gap-2 bg-transparent text-primary-foreground underline-offset-2 underline"
                     data-radix-collection-item=""
                     href="/blog"
                   >
@@ -291,7 +291,7 @@ exports[`Header renders Header unchanged 1`] = `
                         />
                       </svg>
                     </div>
-                    Writing
+                    Blog
                   </a>
                 </li>
               </ul>
@@ -303,7 +303,7 @@ exports[`Header renders Header unchanged 1`] = `
         </nav>
         <button
           aria-label="Open menu"
-          class="inline-flex items-center justify-center gap-1 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 hover:bg-card-foreground hover:text-primary-foreground absolute right-4 z-50 md:hidden"
+          class="inline-flex items-center justify-center gap-1 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 hover:text-primary-foreground absolute right-4 z-50 md:hidden"
         >
           <div
             class="relative h-6 w-6"

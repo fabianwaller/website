@@ -3,17 +3,17 @@
 exports[`Home renders home page unchanged 1`] = `
 <DocumentFragment>
   <section
-    class="w-full"
+    class="w-full overflow-hidden"
     id="home"
   >
     <div
-      class="container relative ml-auto mr-auto w-screen max-w-custom px-8 md:px-0 flex min-h-[calc(100svh-var(--header-height))] flex-col justify-center pb-20 pt-16 sm:pb-24 sm:pt-24"
+      class="container relative ml-auto mr-auto w-screen max-w-custom px-8 md:px-0 h-page-minus-header flex flex-col justify-center py-16 sm:py-24"
     >
       <div
-        class="max-w-[42rem]"
+        class="max-w-4xl"
       >
         <div
-          class="mb-8 flex items-center gap-2 text-sm text-text-light motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+          class="mb-6 inline-flex items-center gap-2 text-sm font-medium text-text-light motion-safe:animate-appear motion-reduce:animate-appear-reduced"
         >
           <svg
             aria-hidden="true"
@@ -42,128 +42,88 @@ exports[`Home renders home page unchanged 1`] = `
           </span>
         </div>
         <h1
-          class="max-w-[11ch] text-[clamp(3rem,10vw,5.5rem)] font-semibold leading-[0.98] tracking-[-0.06em] motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+          class="text-5xl font-semibold leading-none text-title-normal motion-safe:animate-appear motion-reduce:animate-appear-reduced md:text-6xl lg:text-7xl"
         >
-          I turn complex ideas into software people understand.
+          I build digital products
+          <br />
+          that feel intuitive and easy to use.
         </h1>
         <p
-          class="mt-8 max-w-[39rem] text-lg leading-[1.75] text-text-light motion-safe:animate-appear motion-reduce:animate-appear-reduced sm:text-xl"
+          class="mt-8 max-w-2xl text-base leading-7 text-text-normal motion-safe:animate-appear motion-reduce:animate-appear-reduced sm:text-lg sm:leading-8"
         >
-          I’m Fabian, a software engineer based in Saarbrücken. At Ergosign, I help shape digital products from early idea to finished experience—bringing clarity to the decisions people see and feel.
+          <span>
+            Today I work as UX Software Engineering Intern at
+          </span>
+          <a
+            class="ml-1 font-medium text-title-normal underline underline-offset-2 transition-colors hover:text-primary"
+            href="https://ergosign.de/de/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Ergosign
+          </a>
+          . I like to craft products that people love to use by thinking deeply about how it looks, feels and behaves.
         </p>
         <div
-          class="mt-10 flex flex-wrap items-center gap-3 motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+          class="mt-8 flex flex-wrap items-center gap-4 motion-safe:animate-appear motion-reduce:animate-appear-reduced"
         >
-          <a
-            class="relative inline-flex items-center justify-center gap-1 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 bg-primary text-title-normal hover:bg-primary-foreground"
-            href="/projects"
-          >
-            See my work
-            <svg
-              aria-hidden="true"
-              class="lucide lucide-arrow-right size-4"
-              fill="none"
-              height="24"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              width="24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5 12h14"
-              />
-              <path
-                d="m12 5 7 7-7 7"
-              />
-            </svg>
-          </a>
-          <a
-            class="relative inline-flex items-center justify-center gap-1 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 hover:bg-card-foreground hover:text-primary-foreground"
-            href="/contact"
-          >
-            Start a conversation
-          </a>
-        </div>
-      </div>
-    </div>
-    <div
-      class="container relative ml-auto mr-auto w-screen max-w-custom px-8 md:px-0 pb-24 sm:pb-32"
-    >
-      <div
-        class="grid gap-8 border-t border-border pt-10 md:grid-cols-[10rem_1fr] md:gap-14 md:pt-14"
-      >
-        <div
-          class="flex items-center gap-3 self-start text-sm font-medium text-title-normal"
-        >
-          <span
-            aria-hidden="true"
-            class="relative flex size-2"
-          >
-            <span
-              class="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-50 motion-reduce:animate-none"
-            />
-            <span
-              class="relative inline-flex size-2 rounded-full bg-primary"
-            />
-          </span>
-          Working on now
-        </div>
-        <div
-          class="max-w-[34rem]"
-        >
-          <h2
-            class="mb-6 text-3xl leading-tight tracking-[-0.035em] sm:text-4xl"
-          >
-            Making ambitious digital products feel straightforward.
-          </h2>
           <div
-            class="space-y-5 text-base leading-[1.8] text-text-light sm:text-lg"
+            style="opacity: 0;"
           >
-            <p>
-              At 
-              <a
-                class="font-medium text-title-normal underline decoration-primary/50 underline-offset-4 transition-colors hover:decoration-primary"
-                href="https://ergosign.de/de/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                Ergosign
-              </a>
-              , I work with designers and developers to turn complicated requirements into products that make sense. That means asking better questions, caring about the small details, and staying with a problem until the result feels natural to use.
-            </p>
-            <p>
-              Alongside my work, I study computer science at Saarland University. It sharpens how I think; building real products keeps that thinking grounded in people.
-            </p>
-          </div>
-          <a
-            class="group mt-8 inline-flex items-center gap-2 font-medium text-title-normal underline decoration-primary/50 underline-offset-4 transition-colors hover:decoration-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4"
-            href="/projects"
-          >
-            Explore selected work
-            <svg
-              aria-hidden="true"
-              class="lucide lucide-arrow-right size-4 transition-transform group-hover:translate-x-1 motion-reduce:transition-none"
-              fill="none"
-              height="24"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              width="24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              class="relative inline-flex items-center justify-center gap-1 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md hover:text-primary-foreground px-0 text-text-light"
             >
-              <path
-                d="M5 12h14"
-              />
-              <path
-                d="m12 5 7 7-7 7"
-              />
-            </svg>
-          </a>
+              <div
+                class="flex items-center font-medium hover:animate-none motion-safe:animate-in"
+              >
+                <span>
+                  Press
+                </span>
+                <div
+                  class="mx-2 flex h-5 w-5 items-center"
+                >
+                  <span>
+                    ctrl
+                  </span>
+                </div>
+                <span>
+                  K
+                </span>
+                <span
+                  class="ml-2"
+                >
+                  to interact
+                </span>
+                <span
+                  class="ml-2"
+                >
+                  <div
+                    style="opacity: 0;"
+                  >
+                    <svg
+                      class="lucide lucide-arrow-right"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 12h14"
+                      />
+                      <path
+                        d="m12 5 7 7-7 7"
+                      />
+                    </svg>
+                  </div>
+                </span>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -32,7 +32,7 @@ export const navigationItems = [
   // },
   {
     href: "/blog",
-    title: "Writing",
+    title: "Blog",
     icon: <Newspaper className="h-full w-full" />,
   },
 ];

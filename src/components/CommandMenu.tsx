@@ -30,7 +30,7 @@ export function CommandMenuButton(
 ) {
   const { toggle } = useCommandMenu();
 
-  const [action, setAction] = useState("Tap ");
+  const [action, setAction] = useState("Tap");
   const [cmd, setCmd] = useState<React.ReactNode>(null);
   const [hotkey, setHotkey] = useState<React.ReactNode>(null);
 
@@ -39,9 +39,9 @@ export function CommandMenuButton(
     const isMac = /(Mac)/i.test(window.navigator.userAgent);
     const isMobile = /iPhone|iPad|Android/i.test(window.navigator.userAgent);
     if (isMobile) {
-      setAction("Tap ");
+      setAction("Tap");
     } else {
-      setAction("Press ");
+      setAction("Press");
       if (isMac) {
         setCmd(<CommandIcon />);
       } else {

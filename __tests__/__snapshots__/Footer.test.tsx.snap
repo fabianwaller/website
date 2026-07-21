@@ -139,7 +139,7 @@ exports[`Footer renders Footer unchanged 1`] = `
             </a>
           </div>
           <span
-            class="text-left text-sm text-text-light"
+            class="text-left text-sm text-text-light opacity-65"
           >
             © Fabian Waller. All rights reserved.
           </span>

@@ -8,7 +8,7 @@ type LogoProps = {
 const Logo: React.FC<LogoProps> = ({ white }) => {
   return (
     <Link href="/">
-      <span className="text-md font-semibold tracking-normal text-title-normal">
+      <span className="text-sm font-semibold tracking-normal text-title-normal">
         Fabian Waller
       </span>
     </Link>

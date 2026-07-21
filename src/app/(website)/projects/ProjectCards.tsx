@@ -33,7 +33,7 @@ const ProjectCards = ({ data }: { data: Project[] }) => {
           <Glow
             key={repo.full_name}
             color="hsl(var(--foreground))"
-            className="motion-reduce:animate-appear-reduced h-full rounded-lg motion-safe:animate-appear"
+            className="h-full rounded-lg motion-safe:animate-appear motion-reduce:animate-appear-reduced"
             style={{
               animationDelay: getAnimationDelay(2 + Math.floor(index / 2)),
             }}
@@ -54,7 +54,7 @@ const ProjectCards = ({ data }: { data: Project[] }) => {
                       </HStack>
                     )}
                   </div>
-                  <VStack className="items-start" narrow>
+                  <VStack className="items-start gap-3" narrow>
                     <CardTitle>{repo.full_name}</CardTitle>
                     <CardDescription>{repo.description}</CardDescription>
                   </VStack>

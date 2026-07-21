@@ -6,7 +6,7 @@ exports[`Logo renders Logo unchanged 1`] = `
     href="/"
   >
     <span
-      class="text-md font-semibold tracking-normal text-title-normal"
+      class="text-sm font-semibold tracking-normal text-title-normal"
     >
       Fabian Waller
     </span>
@@ -20,7 +20,7 @@ exports[`Logo renders white Logo unchanged 1`] = `
     href="/"
   >
     <span
-      class="text-md font-semibold tracking-normal text-title-normal"
+      class="text-sm font-semibold tracking-normal text-title-normal"
     >
       Fabian Waller
     </span>

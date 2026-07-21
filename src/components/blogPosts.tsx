@@ -37,14 +37,16 @@ const BlogPosts = ({ posts }: { posts: readonly BlogPostSummary[] }) => {
               active={hoveredIndex === index}
               className="-left-4 w-full-plus"
             />
-            <Card className="px-4 py-3">
+            <Card className="px-5 py-4">
               <CardContent>
-                <div className="flex items-center justify-between gap-4">
-                  <div>
-                    <h3 className="text-xl font-bold">{post.title}</h3>
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+                  <div className="max-w-xl">
+                    <h3 className="mb-1 text-xl font-semibold leading-snug text-title-normal">
+                      {post.title}
+                    </h3>
                     <CardDescription>{post.summary}</CardDescription>
                   </div>
-                  <span>
+                  <span className="text-sm font-medium text-text-light">
                     {format(post.publishedAt, "dd.MM.yyyy", {
                       locale: de,
                     })}

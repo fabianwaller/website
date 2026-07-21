@@ -7,11 +7,11 @@ exports[`Projects renders projects page unchanged 1`] = `
     style="position: relative; --glow-size: 300px;"
   >
     <div
-      class="motion-reduce:animate-appear-reduced h-full rounded-lg motion-safe:animate-appear motion-reduce:animate-appear-reduced relative motion-safe:animate-appear"
+      class="h-full rounded-lg motion-safe:animate-appear motion-reduce:animate-appear-reduced motion-reduce:animate-appear-reduced relative motion-safe:animate-appear"
       style="animation-delay: 0.12s; --glow-top: 0px; --glow-left: 0px;"
     >
       <div
-        class="motion-reduce:animate-appear-reduced h-full rounded-lg motion-safe:animate-appear after:inset-0.25 pointer-events-none absolute inset-0 mix-blend-soft-light after:absolute after:rounded-[inherit] after:bg-background/90 after:content-['']"
+        class="h-full rounded-lg motion-safe:animate-appear motion-reduce:animate-appear-reduced after:inset-0.25 pointer-events-none absolute inset-0 mix-blend-soft-light after:absolute after:rounded-[inherit] after:bg-background/90 after:content-['']"
         style="background-image: radial-gradient(
               var(--glow-size) var(--glow-size) at calc(var(--glow-x, -99999px) - var(--glow-left, 0px))
               calc(var(--glow-y, -99999px) - var(--glow-top, 0px)),
@@ -54,15 +54,15 @@ exports[`Projects renders projects page unchanged 1`] = `
               </div>
             </div>
             <div
-              class="flex flex-col justify-center gap-2 items-start"
+              class="flex flex-col justify-center items-start gap-3"
             >
               <h3
-                class="text-lg font-medium leading-none tracking-tight text-title-normal"
+                class="text-lg font-semibold leading-snug text-title-normal"
               >
                 fabianwaller/Aura
               </h3>
               <p
-                class="text-normal"
+                class="text-sm leading-6 text-text-light"
               >
                 AuraPvP plugin
               </p>
@@ -142,7 +142,7 @@ exports[`Projects renders projects page unchanged 1`] = `
                 target="_blank"
               >
                 <button
-                  class="relative inline-flex items-center justify-center gap-1 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 hover:bg-card-foreground hover:text-primary-foreground left-2 ml-auto"
+                  class="relative inline-flex items-center justify-center gap-1 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 hover:text-primary-foreground left-2 ml-auto"
                 >
                   <svg
                     class="lucide lucide-external-link h-4 w-4"
