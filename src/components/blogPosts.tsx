@@ -37,11 +37,11 @@ const BlogPosts = ({ posts }: { posts: readonly BlogPostSummary[] }) => {
               active={hoveredIndex === index}
               className="-left-4 w-full-plus"
             />
-            <Card>
+            <Card className="px-4 py-3">
               <CardContent>
                 <div className="flex items-center justify-between gap-4">
                   <div>
-                    <h3>{post.title}</h3>
+                    <h3 className="text-xl font-bold">{post.title}</h3>
                     <CardDescription>{post.summary}</CardDescription>
                   </div>
                   <span>

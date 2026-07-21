@@ -18,16 +18,16 @@ const Blog: React.FC = () => {
       subtitle="insight in my thoughts"
     >
       <VStack>
-        <p
-          className="leading-relaxed motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+        {/* <p
+          className="motion-reduce:animate-appear-reduced leading-relaxed motion-safe:animate-appear"
           style={{ animationDelay: getAnimationDelay(2) }}
         >
           Here you&apos;ll find all my public thoughts, notes, learnings and
           experiences. I share whatever I want, ranging from programming to
           math, over books and podcasts and much more. Scroll down to check them
           out!
-        </p>
-        <BlogPosts posts={posts} />
+        </p> */}
+        <BlogPosts />
       </VStack>
     </Section>
   );

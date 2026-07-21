@@ -16,6 +16,7 @@ import { FaGithub as Github } from "react-icons/fa6";
 import { Badge } from "@/components/ui/badge";
 import { Glow, GlowArea } from "@/components/glow";
 import { getAnimationDelay } from "@/components/Section";
+import type { Project } from "./utils";
 
 const formatDate = (date: Date) => {
   return (
@@ -23,11 +24,11 @@ const formatDate = (date: Date) => {
   );
 };
 
-const ProjectCards = ({ data }: { data: any[] }) => {
+const ProjectCards = ({ data }: { data: Project[] }) => {
   return (
     <GlowArea className={"flex grid-cols-2 flex-col gap-6 md:grid"}>
       {data.map((repo, index) => {
-        const topics: any[] = repo.topics;
+        const topics = repo.topics;
         return (
           <Glow
             key={repo.full_name}

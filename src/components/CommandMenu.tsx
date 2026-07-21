@@ -25,7 +25,9 @@ import { englishAnalyzer } from "@fabianwaller/document-search/english";
 
 const blogSearchAnalyzer = englishAnalyzer();
 
-export function CommandMenuButton() {
+export function CommandMenuButton(
+  props: React.ButtonHTMLAttributes<HTMLButtonElement>,
+) {
   const { toggle } = useCommandMenu();
 
   const [action, setAction] = useState("Tap ");
@@ -55,7 +57,7 @@ export function CommandMenuButton() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.8 }}
     >
-      <Button variant="ghost" className="relative -left-4">
+      <Button variant="ghost" size="lg" {...props}>
         <div
           className="flex items-center font-medium hover:animate-none motion-safe:animate-in"
           onClick={toggle}
@@ -67,7 +69,7 @@ export function CommandMenuButton() {
               {hotkey}
             </>
           )}
-          <span className="ml-2">for shortcuts</span>
+          <span className="ml-2">to interact</span>
           <span className="ml-2">
             <motion.div
               initial={{ opacity: 0 }}
@@ -132,7 +134,7 @@ export function CommandMenu({ searchData }: { searchData: BlogSearchData }) {
     <div className="space-y-4">
       <CommandDialog open={open} onOpenChange={toggle} shouldFilter={false}>
         <CommandInput
-          placeholder="Type a command or search..."
+          placeholder="Search for anything"
           value={search}
           onValueChange={setSearch}
         />
@@ -140,19 +142,7 @@ export function CommandMenu({ searchData }: { searchData: BlogSearchData }) {
           <CommandEmpty>No results found.</CommandEmpty>
           {!trimmedSearch && (
             <>
-              <CommandGroup heading="External">
-                {socialItems.map((item) => (
-                  <CommandItem
-                    key={item.href}
-                    onSelect={() => handleSelect(item.href, item.blank)}
-                  >
-                    {item.icon}
-                    <span>{item.titleShort ?? item.title}</span>
-                  </CommandItem>
-                ))}
-              </CommandGroup>
-              <CommandSeparator />
-              <CommandGroup heading="Links">
+               <CommandGroup heading="Links">
                 {navigationItems.map((item) => (
                   <CommandItem
                     key={item.href}
@@ -160,6 +150,18 @@ export function CommandMenu({ searchData }: { searchData: BlogSearchData }) {
                   >
                     {item.icon}
                     <span>{item.title}</span>
+                  </CommandItem>
+                ))}
+              </CommandGroup>
+              <CommandSeparator />
+               <CommandGroup heading="External">
+                {socialItems.map((item) => (
+                  <CommandItem
+                    key={item.href}
+                    onSelect={() => handleSelect(item.href, item.blank)}
+                  >
+                    {item.icon}
+                    <span>{item.titleShort ?? item.title}</span>
                   </CommandItem>
                 ))}
               </CommandGroup>

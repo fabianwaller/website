@@ -17,6 +17,14 @@ const getClosedSourceProjects = () => {
   return [
     {
       type: "closed",
+      full_name: "Repsset",
+      html_url: "https://testflight.apple.com/join/VXFAv9Gp",
+      description: "Delightful workout tracker for iOS",
+      topics: ["expo", "react-native", "typescript", "tailwindcss", "zustand"],
+      pushed_at: new Date("2026-06-24").toISOString(),
+    },
+    {
+      type: "closed",
       full_name: "Website FC Düppenweiler",
       html_url: "https://www.xn--fcdppenweiler-yob.de/",
       description: "Vereinswebsite",

@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { FolderKanban, House, Newspaper, User, Wrench } from "lucide-react";
+import { FolderKanban, House, Newspaper } from "lucide-react";
 import MenuButton from "./MenuButton";
 
 export const navigationItems = [
@@ -21,23 +21,18 @@ export const navigationItems = [
     icon: <House className="h-full w-full" />,
   },
   {
-    href: "/about",
-    title: "About",
-    icon: <User className="h-full w-full" />,
-  },
-  {
     href: "/projects",
     title: "Projects",
     icon: <FolderKanban className="h-full w-full" />,
   },
-  {
-    href: "/uses",
-    title: "Uses",
-    icon: <Wrench className="h-full w-full" />,
-  },
+  // {
+  //   href: "/uses",
+  //   title: "Uses",
+  //   icon: <Wrench className="h-full w-full" />,
+  // },
   {
     href: "/blog",
-    title: "Blog",
+    title: "Writing",
     icon: <Newspaper className="h-full w-full" />,
   },
 ];
@@ -157,7 +152,7 @@ export function Navigation() {
                   className={cn([
                     navigationMenuTriggerStyle(),
                     "flex h-fit flex-col gap-2 bg-transparent",
-                    "text-primary-foreground underline-offset-4",
+                    "text-primary-foreground underline-offset-2",
                     pathname == item.href ? activeClass : "underline",
                   ])}
                   onClick={() => (menuOpen ? toggleMenu() : null)}
