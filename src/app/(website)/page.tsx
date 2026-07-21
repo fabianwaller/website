@@ -17,27 +17,24 @@ export default function Home() {
             <MapPin aria-hidden="true" className="size-4" />
             <span>Saarbrücken, Germany</span>
           </div>
-
           <h1 className="text-5xl font-semibold leading-none text-title-normal motion-safe:animate-appear motion-reduce:animate-appear-reduced md:text-6xl lg:text-7xl">
             I build digital products
             <br />
-            that feel intuitive and easy to use.
+            that feel intuitive and are easy to use.
           </h1>
-
           <p className="mt-8 max-w-2xl text-base leading-7 text-text-normal motion-safe:animate-appear motion-reduce:animate-appear-reduced sm:text-lg sm:leading-8">
-            <span>Today I work as UX Software Engineering Intern at</span>
+            <span>Today I work as a UX Software Engineering Intern at </span>
             <Link
-              className="ml-1 font-medium text-title-normal underline underline-offset-2 transition-colors hover:text-primary"
+              className="font-medium text-title-normal underline underline-offset-2 transition-colors hover:text-primary"
               href="https://ergosign.de/de/"
               target="_blank"
               rel="noreferrer"
             >
               Ergosign
             </Link>
-            . I like to craft products that people love to use by thinking
-            deeply about how it looks, feels and behaves.
+            . I enjoy crafting digital products that people love to use, which
+            involves thinking deeply about how they look, feel and behave.
           </p>
-
           <div className="mt-8 flex flex-wrap items-center gap-4 motion-safe:animate-appear motion-reduce:animate-appear-reduced">
             <Suspense>
               <CommandMenuButton className="px-0 text-text-light" />
