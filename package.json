@@ -2,9 +2,9 @@
   "name": "personal-website",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@11.5.2",
+  "packageManager": "pnpm@9.15.9",
   "engines": {
-    "node": ">=20.9.0"
+    "node": "20.x"
   },
   "scripts": {
     "search:index": "ts-node --transpile-only --project tsconfig.scripts.json scripts/build-command-search-index.ts",
