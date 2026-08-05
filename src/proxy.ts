@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse, userAgent } from "next/server";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const url = request.nextUrl;
   const { device } = userAgent(request);
   const viewport = device.type === "mobile" ? "mobile" : "desktop";

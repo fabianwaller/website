@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Header renders Header unchanged 1`] = `
 <DocumentFragment>
@@ -49,6 +49,7 @@ exports[`Header renders Header unchanged 1`] = `
                     class="size-4 sm:size-6 md:hidden"
                   >
                     <svg
+                      aria-hidden="true"
                       class="lucide lucide-house h-full w-full"
                       fill="none"
                       height="24"
@@ -64,7 +65,7 @@ exports[`Header renders Header unchanged 1`] = `
                         d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"
                       />
                       <path
-                        d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                        d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
                       />
                     </svg>
                   </div>
@@ -85,6 +86,7 @@ exports[`Header renders Header unchanged 1`] = `
                     class="size-4 sm:size-6 md:hidden"
                   >
                     <svg
+                      aria-hidden="true"
                       class="lucide lucide-folder-kanban h-full w-full"
                       fill="none"
                       height="24"
@@ -127,6 +129,7 @@ exports[`Header renders Header unchanged 1`] = `
                     class="size-4 sm:size-6 md:hidden"
                   >
                     <svg
+                      aria-hidden="true"
                       class="lucide lucide-newspaper h-full w-full"
                       fill="none"
                       height="24"
@@ -186,6 +189,7 @@ exports[`Header renders Header unchanged 1`] = `
                       class="size-4 sm:size-6 md:hidden"
                     >
                       <svg
+                        aria-hidden="true"
                         class="lucide lucide-house h-full w-full"
                         fill="none"
                         height="24"
@@ -201,7 +205,7 @@ exports[`Header renders Header unchanged 1`] = `
                           d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"
                         />
                         <path
-                          d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                          d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
                         />
                       </svg>
                     </div>
@@ -221,6 +225,7 @@ exports[`Header renders Header unchanged 1`] = `
                       class="size-4 sm:size-6 md:hidden"
                     >
                       <svg
+                        aria-hidden="true"
                         class="lucide lucide-folder-kanban h-full w-full"
                         fill="none"
                         height="24"
@@ -262,6 +267,7 @@ exports[`Header renders Header unchanged 1`] = `
                       class="size-4 sm:size-6 md:hidden"
                     >
                       <svg
+                        aria-hidden="true"
                         class="lucide lucide-newspaper h-full w-full"
                         fill="none"
                         height="24"

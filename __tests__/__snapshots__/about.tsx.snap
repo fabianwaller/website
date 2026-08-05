@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`About renders about page unchanged 1`] = `
 <DocumentFragment>
@@ -332,6 +332,7 @@ exports[`About renders about page unchanged 1`] = `
               </button>
             </a>
             <svg
+              aria-hidden="true"
               class="lucide lucide-dot"
               fill="none"
               height="24"
@@ -344,8 +345,8 @@ exports[`About renders about page unchanged 1`] = `
               xmlns="http://www.w3.org/2000/svg"
             >
               <circle
-                cx="12.1"
-                cy="12.1"
+                cx="12"
+                cy="12"
                 r="1"
               />
             </svg>
@@ -373,6 +374,7 @@ exports[`About renders about page unchanged 1`] = `
               University of Saarland
             </span>
             <svg
+              aria-hidden="true"
               class="lucide lucide-dot"
               fill="none"
               height="24"
@@ -385,8 +387,8 @@ exports[`About renders about page unchanged 1`] = `
               xmlns="http://www.w3.org/2000/svg"
             >
               <circle
-                cx="12.1"
-                cy="12.1"
+                cx="12"
+                cy="12"
                 r="1"
               />
             </svg>

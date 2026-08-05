@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Footer renders Footer unchanged 1`] = `
 <DocumentFragment>
@@ -84,6 +84,7 @@ exports[`Footer renders Footer unchanged 1`] = `
               target="_blank"
             >
               <svg
+                aria-hidden="true"
                 class="lucide lucide-rss h-full w-full"
                 fill="none"
                 height="24"
@@ -114,6 +115,7 @@ exports[`Footer renders Footer unchanged 1`] = `
               target="_self"
             >
               <svg
+                aria-hidden="true"
                 class="lucide lucide-mail h-full w-full"
                 fill="none"
                 height="24"
@@ -125,15 +127,15 @@ exports[`Footer renders Footer unchanged 1`] = `
                 width="24"
                 xmlns="http://www.w3.org/2000/svg"
               >
+                <path
+                  d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                />
                 <rect
                   height="16"
                   rx="2"
                   width="20"
                   x="2"
                   y="4"
-                />
-                <path
-                  d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
                 />
               </svg>
             </a>

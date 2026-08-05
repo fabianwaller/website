@@ -9,38 +9,38 @@
 install dependencies
 
 ```bash
-$ npm install
+$ pnpm install
 ```
 
 ## Development
 
 start dev server
 ```bash
-$ npm run dev
+$ pnpm dev
 ```
 run linter
 ```bash
-$ npm run lint
+$ pnpm lint
 ```
 run tests
 ```bash
-$ npm run test
+$ pnpm test
 ```
 
 build icons
 ```bash
-$ npm run icons
+$ pnpm icons
 ```
 
 ## Build
 
 build for production
 ```bash
-$ npm run build
+$ pnpm build
 ```
 start production server
 ```bash
-$ npm run start
+$ pnpm start
 ```
 
 ## Project structure

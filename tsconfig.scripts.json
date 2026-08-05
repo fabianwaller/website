@@ -1,8 +1,9 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "module": "CommonJS",
-    "moduleResolution": "Node",
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "rootDir": ".",
     "noEmit": false
   },
   "include": ["scripts/**/*.ts", "src/**/*.ts"]

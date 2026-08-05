@@ -12,7 +12,7 @@ import {
   CommandSeparator,
 } from "@/components/ui/command";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
 import { useCommandMenu } from "@/provider/CommandMenuContext";
@@ -25,31 +25,28 @@ import {
   searchCommandDocuments,
 } from "@/lib/command-search";
 
+type InputMode = "mobile" | "mac" | "other";
+
+const subscribeToInputMode = () => () => {};
+
+function getInputMode(): InputMode {
+  if (/iPhone|iPad|Android/i.test(window.navigator.userAgent)) return "mobile";
+  if (/Mac/i.test(window.navigator.userAgent)) return "mac";
+  return "other";
+}
+
+const getServerInputMode = (): InputMode => "mobile";
+
 export function CommandMenuButton(
   props: React.ButtonHTMLAttributes<HTMLButtonElement>,
 ) {
   const { toggle } = useCommandMenu();
-
-  const [action, setAction] = useState("Tap");
-  const [cmd, setCmd] = useState<React.ReactNode>(null);
-  const [hotkey, setHotkey] = useState<React.ReactNode>(null);
-
-  useEffect(() => {
-    if (!window) return null;
-    const isMac = /(Mac)/i.test(window.navigator.userAgent);
-    const isMobile = /iPhone|iPad|Android/i.test(window.navigator.userAgent);
-    if (isMobile) {
-      setAction("Tap");
-    } else {
-      setAction("Press");
-      if (isMac) {
-        setCmd(<CommandIcon />);
-      } else {
-        setCmd(<span>ctrl</span>);
-      }
-      setHotkey(<span>K</span>);
-    }
-  }, []);
+  const inputMode = useSyncExternalStore(
+    subscribeToInputMode,
+    getInputMode,
+    getServerInputMode,
+  );
+  const isMobile = inputMode === "mobile";
 
   return (
     <motion.div
@@ -62,11 +59,13 @@ export function CommandMenuButton(
           className="flex items-center font-medium hover:animate-none motion-safe:animate-in"
           onClick={toggle}
         >
-          <span>{action}</span>
-          {cmd && hotkey && (
+          <span>{isMobile ? "Tap" : "Press"}</span>
+          {!isMobile && (
             <>
-              <div className="mx-2 flex h-5 w-5 items-center">{cmd}</div>
-              {hotkey}
+              <div className="mx-2 flex h-5 w-5 items-center">
+                {inputMode === "mac" ? <CommandIcon /> : <span>ctrl</span>}
+              </div>
+              <span>K</span>
             </>
           )}
           <span className="ml-2">to interact</span>
