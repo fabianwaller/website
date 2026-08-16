@@ -10,10 +10,10 @@ exports[`Home renders home page unchanged 1`] = `
       class="container relative ml-auto mr-auto w-screen max-w-custom px-8 md:px-0 flex h-auto flex-col justify-center py-16 md:py-24"
     >
       <div
-        class="max-w-4xl"
+        class="max-w-4xl space-y-4 md:space-y-5 lg:space-y-6"
       >
         <div
-          class="mb-6 inline-flex items-center gap-2 text-sm font-medium text-text-light motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+          class="text-text-light motion-safe:animate-appear motion-reduce:animate-appear-reduced inline-flex items-center gap-2 text-sm font-medium"
         >
           <svg
             aria-hidden="true"
@@ -42,20 +42,20 @@ exports[`Home renders home page unchanged 1`] = `
           </span>
         </div>
         <h1
-          class="text-4xl font-semibold leading-none text-title-normal motion-safe:animate-appear motion-reduce:animate-appear-reduced md:text-5xl md:text-6xl lg:text-7xl"
+          class="text-title-normal motion-safe:animate-appear motion-reduce:animate-appear-reduced text-3xl leading-none font-semibold md:text-4xl lg:text-5xl"
         >
           I build digital products
           <br />
           that feel intuitive and are easy to use.
         </h1>
         <p
-          class="mt-8 max-w-2xl text-sm leading-7 text-text-normal motion-safe:animate-appear motion-reduce:animate-appear-reduced sm:text-lg sm:leading-8 md:text-base"
+          class="text-text-normal motion-safe:animate-appear motion-reduce:animate-appear-reduced max-w-2xl text-sm leading-7 sm:text-lg sm:leading-8 md:text-base"
         >
           <span>
             Today I work as a UX Software Engineering Intern at 
           </span>
           <a
-            class="font-medium text-title-normal underline underline-offset-2 transition-colors hover:text-primary"
+            class="text-title-normal hover:text-primary font-medium underline underline-offset-2 transition-colors"
             href="https://ergosign.de/de/"
             rel="noreferrer"
             target="_blank"
@@ -65,13 +65,13 @@ exports[`Home renders home page unchanged 1`] = `
           . I enjoy crafting digital products that people love to use, which involves thinking deeply about how they look, feel and behave.
         </p>
         <div
-          class="mt-8 flex flex-wrap items-center gap-4 motion-safe:animate-appear motion-reduce:animate-appear-reduced"
+          class="motion-safe:animate-appear motion-reduce:animate-appear-reduced flex flex-wrap items-center gap-4"
         >
           <div
             style="opacity: 0;"
           >
             <button
-              class="relative inline-flex items-center justify-center gap-1 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md hover:text-primary-foreground px-0 text-text-light"
+              class="relative inline-flex items-center justify-center gap-1 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md hover:text-primary-foreground text-text-light px-0"
             >
               <div
                 class="flex items-center font-medium hover:animate-none motion-safe:animate-in"
