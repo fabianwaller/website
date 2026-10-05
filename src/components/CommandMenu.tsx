@@ -91,6 +91,15 @@ export function CommandMenu({ searchData }: { searchData: CommandSearchData }) {
 
   const [search, setSearch] = useState("");
   const trimmedSearch = search.trim();
+  const normalizedSearch = trimmedSearch.toLowerCase();
+  const matchingNavigationItems = navigationItems.filter((item) =>
+    item.title.toLowerCase().includes(normalizedSearch),
+  );
+  const matchingSocialItems = socialItems.filter((item) =>
+    [item.title, item.titleShort].some((title) =>
+      title?.toLowerCase().includes(normalizedSearch),
+    ),
+  );
 
   const commandSearchIndex = useMemo(
     () => loadCommandSearchIndex(searchData),
@@ -98,8 +107,8 @@ export function CommandMenu({ searchData }: { searchData: CommandSearchData }) {
   );
 
   const rankedDocuments = useMemo(
-    () => searchCommandDocuments(commandSearchIndex, trimmedSearch),
-    [commandSearchIndex, trimmedSearch],
+    () => searchCommandDocuments(commandSearchIndex, search),
+    [commandSearchIndex, search],
   );
   const rankedBlogPosts = rankedDocuments.filter(
     (document) => document.type === "blog",
@@ -139,10 +148,10 @@ export function CommandMenu({ searchData }: { searchData: CommandSearchData }) {
         />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
-          {!trimmedSearch && (
+          {matchingNavigationItems.length > 0 && (
             <>
               <CommandGroup heading="Links">
-                {navigationItems.map((item) => (
+                {matchingNavigationItems.map((item) => (
                   <CommandItem
                     key={item.href}
                     onSelect={() => handleSelect(item.href, false)}
@@ -153,8 +162,12 @@ export function CommandMenu({ searchData }: { searchData: CommandSearchData }) {
                 ))}
               </CommandGroup>
               <CommandSeparator />
+            </>
+          )}
+          {matchingSocialItems.length > 0 && (
+            <>
               <CommandGroup heading="External">
-                {socialItems.map((item) => (
+                {matchingSocialItems.map((item) => (
                   <CommandItem
                     key={item.href}
                     onSelect={() => handleSelect(item.href, item.blank)}
