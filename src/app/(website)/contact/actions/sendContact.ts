@@ -3,15 +3,15 @@
 import { ValuesType } from "@/components/ContactForm";
 import { TelegramBot } from "typescript-telegram-bot-api";
 
-const botToken = process.env.TELEGRAM_BOT_TOKEN;
-const chatId = process.env.TELEGRAM_CHAT_ID;
-const bot = new TelegramBot({ botToken: botToken });
+const bot = new TelegramBot({ botToken: process.env.TELEGRAM_BOT_TOKEN });
 
 export const sendContact = async (values: ValuesType) => {
   try {
     await bot.sendMessage({
-      chat_id: chatId,
+      chat_id: process.env.TELEGRAM_CHAT_ID,
       text: `Name: ${values.firstname + " " + values.lastname} \nEmail: ${values.email} \nMessage: ${values.message}`,
+      message_thread_id: process.env.TELEGRAM_TOPIC_ID ? parseInt(process.env.TELEGRAM_TOPIC_ID) : undefined,
+
     });
   } catch (error) {
     console.error(error);
